@@ -125,7 +125,7 @@
                         <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
                         <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 5.05A1 1 0 016.465 3.636l.707.707a1 1 0 01-1.414 1.414l-.707-.707zM3 11a1 1 0 100-2H2a1 1 0 100 2h1zM11 17a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM6.464 16.364A1 1 0 015.05 14.95l.707-.707a1 1 0 011.414 1.414l-.707.707z"></path></svg>
                     </button>
-                    <a href="https://drive.google.com/file/d/1f7yp4etDroA_MwM0j42CJoBlmL-FkDNs/view?usp=sharing" target="_blank" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg transition-colors">
+                    <a href="https://drive.google.com/file/d/1ak0SAXNCWu5ejJHPYSpyZYDzHF4qHo89/view?usp=sharing" target="_blank" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg transition-colors">
                         View Resume
                     </a>
                 </div>
@@ -153,7 +153,7 @@
                 </div>
                 <!-- Image Placeholder -->
                 <div class="wow animate__animated animate__fadeInRight md:order-first">
-                    <img src="xxx.jpg" 
+                    <img src="https://placehold.co/256x256/1e293b/e2e8f0?text=AS" 
                          alt="Aritro Shome" 
                          class="rounded-2xl w-48 h-48 md:w-64 md:h-64 object-cover border-4"
                          style="border-color: rgba(56, 189, 248, 0.5);">
@@ -226,12 +226,18 @@
                 <div class="glass-card p-8 rounded-2xl wow animate__animated animate__fadeIn">
                     <div class="flex flex-col sm:flex-row justify-between sm:items-start">
                         <div>
-                            <h3 class="text-2xl font-bold text-sky-400">Vice President</h3>
-                            <p class="text-lg mt-1" style="color: var(--text-color-light);">Calcutta Quizzing Circuit (CQC)</p>
+                            <h3 class="text-2xl font-bold text-sky-400">AI Engineer Intern</h3>
+                            <p class="text-lg mt-1" style="color: var(--text-color-light);">Sarvam AI</p>
                         </div>
-                        <p class="sm:text-right mt-2 sm:mt-0 flex-shrink-0" style="color: var(--text-color-muted);">Jan 2025 - Jul 2025</p>
+                        <p class="sm:text-right mt-2 sm:mt-0 flex-shrink-0" style="color: var(--text-color-muted);">Aug 2025 – Dec 2025</p>
                     </div>
-                    <p class="mt-4" style="color: var(--text-color-muted);">Managing all aspects of the quizzing circuit, from member engagement and event organization to external relations.</p>
+                    <ul class="mt-4 space-y-2 list-disc list-inside" style="color: var(--text-color-muted);">
+                        <li>Spearheaded the evaluation framework for an <strong>NVIDIA-provided LipSync Model</strong>, developing both quantitative and qualitative metrics and automating the quantitative pipeline with Python and data visualization to benchmark performance.</li>
+                        <li>Diagnosed and resolved a critical bug in the LipSync model's output pipeline that caused unpredictable video file size changes (~500% variance), ensuring stable and reliable video generation.</li>
+                        <li>Redesigned the dubbing pipeline's translation prompt architecture by identifying and modularizing redundancies, contradictions, and hard-coded elements in the existing prompt library.</li>
+                        <li>Implemented a <strong>YAML-based, block-wise structure</strong> for prompt composition to improve maintainability and proposed changes, significantly streamlining future prompt modifications across the system.</li>
+                        <li>Executed A/B testing on the newly implemented modular prompt architecture and discovered that an unformatted "open-free" prompt achieved superior translation quality, leading to an optimized and simplified final deployment.</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -245,55 +251,49 @@
             <div class="space-y-12">
                 <!-- Project 1 -->
                 <div class="glass-card p-8 rounded-2xl wow animate__animated animate__fadeInLeft">
-                    <h3 class="text-2xl font-bold text-sky-400">ML and NLP from Scratch</h3>
-                    <p class="mt-4" style="color: var(--text-color-light);">Implemented foundational ML/NLP algorithms (Regression, KNN, K-Means, MLP, Bag-of-Words, TF-IDF, CBOW, SkipGram) from first principles to reinforce conceptual understanding without black-box abstractions.</p>
+                    <h3 class="text-2xl font-bold text-sky-400">AlponaGen - Procedural Generative Art Engine</h3>
+                    <p class="mt-4" style="color: var(--text-color-light);">Designed and engineered a <strong>modular Python engine</strong> to procedurally generate <strong>Alpona</strong>, a traditional Bengali folk art, using a fractal-based mathematical layering algorithm to produce intricate, authentic Alpona images.</p>
+                    <ul class="mt-4 space-y-2 list-disc list-inside" style="color: var(--text-color-muted);">
+                        <li>Generated and published a novel, high-quality synthetic dataset of 13,000 images (1024x1024) on Kaggle to facilitate research in culturally relevant generative AI and pattern recognition tasks.</li>
+                        <li>Implemented the core <strong>`style_alpona` algorithm</strong> which utilizes concentric layers and <strong>probabilistic style selection</strong> to control layer density, pattern, and aesthetic composition.</li>
+                        <li>Established a <strong>modular, object-oriented framework</strong> with a `Style Registration System` to decouple the generation engine from pattern drawing functions, ensuring extensibility and robust code maintenance.</li>
+                    </ul>
                     <div class="mt-6 flex space-x-4">
-                        <a href="https://www.kaggle.com/code/ar1tr0/ml-march-algorithms" target="_blank" class="text-sky-400 hover:text-sky-300 transition-colors">ML Notebook</a>
-                        <a href="https://www.kaggle.com/code/ar1tr0/nlp-algorithms" target="_blank" class="text-sky-400 hover:text-sky-300 transition-colors">NLP Notebook</a>
+                        <a href="https://github.com/sortira/alpona-gen" target="_blank" class="text-sky-400 hover:text-sky-300 transition-colors">GitHub</a>
+                        <a href="https://www.kaggle.com/datasets/ar1tr0/alpona-gen" target="_blank" class="text-sky-400 hover:text-sky-300 transition-colors">Kaggle</a>
                     </div>
                 </div>
                 <!-- Project 2 -->
                 <div class="glass-card p-8 rounded-2xl wow animate__animated animate__fadeInRight">
-                    <h3 class="text-2xl font-bold text-indigo-400">Role of AI in Material Science Research</h3>
-                    <p class="mt-4" style="color: var(--text-color-light);">Authored a paper proposing AI-based statistical techniques to accelerate material innovation. Won 1st Place at Professor Brahma Prakash Memorial Material Science Paper Presentation 2023.</p>
+                    <h3 class="text-2xl font-bold text-indigo-400">Thomas Raw - Agentic AI Based Travel Planner</h3>
+                    <p class="mt-4" style="color: var(--text-color-light);">Developed an AI-powered travel assistant using <strong>Google Gemini</strong> and <strong>LangChain</strong>, designed to plan, budget, and personalize travel itineraries. Tech stack: <strong>Python (Flask)</strong>, <strong>LangChain</strong>, <strong>Google Gemini API</strong>, <strong>HTML/CSS/JS</strong>.</p>
+                    <ul class="mt-4 space-y-2 list-disc list-inside" style="color: var(--text-color-muted);">
+                        <li>Implemented multiple modules including <em>Mr. Thomas Chats</em> (conversational agent), <em>Budget Buddy</em> (cost estimator), and <em>Where Is It?</em> (photo-based location identifier).</li>
+                        <li>Integrated export functionality through the <em>Insight Centre</em>, enabling users to save and share their generated trip plans.</li>
+                    </ul>
                     <div class="mt-6 flex space-x-4">
-                        <a href="https://tinyurl.com/materialsciencepaperaritro" target="_blank" class="text-indigo-400 hover:text-indigo-300 transition-colors">Read Paper</a>
+                        <a href="https://github.com/sortira/thomas-raw" target="_blank" class="text-indigo-400 hover:text-indigo-300 transition-colors">GitHub</a>
                     </div>
                 </div>
                 <!-- Project 3 -->
                 <div class="glass-card p-8 rounded-2xl wow animate__animated animate__fadeInLeft">
-                    <h3 class="text-2xl font-bold text-purple-400">Vidvaan - AI powered Research Paper Aggregator</h3>
-                    <p class="mt-4" style="color: var(--text-color-light);">Built a unified aggregator for academic papers from DBLP, ArXiv, and more, with real-time summarization via Google Gemini API.</p>
+                    <h3 class="text-2xl font-bold text-purple-400">Predicting the 2025 IPL Winner</h3>
+                    <p class="mt-4" style="color: var(--text-color-light);">Explored how data science could be applied to sports prediction and fan engagement. Built models including Decision Trees, Random Forests, MLP Classifiers, and Monte Carlo simulations.</p>
+                    <ul class="mt-4 space-y-2 list-disc list-inside" style="color: var(--text-color-muted);">
+                        <li>Performed comprehensive EDA and model evaluation to maximize prediction accuracy.</li>
+                        <li>Won BrainDead 2025 Hackathon organized by the CST Department, IIEST Shibpur.</li>
+                    </ul>
                     <div class="mt-6 flex space-x-4">
-                        <a href="https://vidvaan-testing.pages.dev/" target="_blank" class="text-purple-400 hover:text-purple-300 transition-colors">Live Demo</a>
+                        <a href="https://github.com/sortira/BrainDead2025" target="_blank" class="text-purple-400 hover:text-purple-300 transition-colors">GitHub Repo</a>
                     </div>
                 </div>
                 <!-- Project 4 -->
                 <div class="glass-card p-8 rounded-2xl wow animate__animated animate__fadeInRight">
-                    <h3 class="text-2xl font-bold text-sky-400">Predicting the 2025 IPL Winner</h3>
-                    <p class="mt-4" style="color: var(--text-color-light);">Applied data science to sports prediction using Decision Trees, Random Forests, and Monte Carlo simulations. Won BrainDead 2025 Hackathon.</p>
+                    <h3 class="text-2xl font-bold text-sky-400">Abler (Winner - SXC eXabyte Hackathon)</h3>
+                    <p class="mt-4" style="color: var(--text-color-light);">Built a real-time accessibility assistant with object detection, depth estimation, and speech/gesture recognition to address accessibility gaps for the visually impaired using multimodal AI systems.</p>
                     <div class="mt-6 flex space-x-4">
-                        <a href="https://github.com/sortira/BrainDead2025" target="_blank" class="text-sky-400 hover:text-sky-300 transition-colors">GitHub Repo</a>
-                    </div>
-                </div>
-                 <!-- Project 5 -->
-                <div class="glass-card p-8 rounded-2xl wow animate__animated animate__fadeInLeft">
-                    <h3 class="text-2xl font-bold text-indigo-400">Abler (Winner - SXC eXabyte Hackathon)</h3>
-                    <p class="mt-4" style="color: var(--text-color-light);">Built a real-time accessibility assistant for the visually impaired with object detection, depth estimation, and speech/gesture recognition.</p>
-                    <div class="mt-6 flex space-x-4">
-                        <a href="https://github.com/TheSopranos" target="_blank" class="text-indigo-400 hover:text-indigo-300 transition-colors">GitHub</a>
-                        <a href="https://youtu.be/hdMCwxbb7FY" target="_blank" class="text-indigo-400 hover:text-indigo-300 transition-colors">Watch Demo</a>
-                    </div>
-                </div>
-                <!-- Project 6 -->
-                <div class="glass-card p-8 rounded-2xl wow animate__animated animate__fadeInRight">
-                    <h3 class="text-2xl font-bold text-purple-400">Applied AI/ML Projects and Tooling</h3>
-                    <p class="mt-4" style="color: var(--text-color-light);">Curated a diverse portfolio of AI/ML experiments and interactive tools, including music generation, a spam classifier, and a geography guessing game. Won Best Design at Hacknoware 2025 for MentL, a mental wellness assistant.</p>
-                    <div class="mt-6 flex flex-wrap gap-4">
-                        <a href="https://github.com/sortira/aiml-works" target="_blank" class="text-purple-400 hover:text-purple-300 transition-colors">AI/ML Works</a>
-                        <a href="https://github.com/sortira/sms-spam" target="_blank" class="text-purple-400 hover:text-purple-300 transition-colors">Spam Classifier</a>
-                        <a href="https://sortira.github.io/whereami" target="_blank" class="text-purple-400 hover:text-purple-300 transition-colors">Where Am I? (Game)</a>
-                        <a href="https://github.com/sortira/MentL" target="_blank" class="text-purple-400 hover:text-purple-300 transition-colors">MentL</a>
+                        <a href="https://github.com/TheSopranos" target="_blank" class="text-sky-400 hover:text-sky-300 transition-colors">GitHub</a>
+                        <a href="https://youtu.be/hdMCwxbb7FY" target="_blank" class="text-sky-400 hover:text-sky-300 transition-colors">Watch Demo</a>
                     </div>
                 </div>
             </div>
@@ -337,7 +337,7 @@
                     <a href="https://www.credly.com/badges/b22817dd-45d3-4818-91e9-e6053dbca7f8/public_url" target="_blank" class="block text-center font-semibold hover:text-sky-400 transition-colors duration-300" style="color: var(--text-color-light);">Google Cloud Storage</a>
                 </div>
                 <div class="glass-card p-6 rounded-2xl wow animate__animated animate__fadeIn" data-wow-delay="1.1s">
-                    <a href="https://www.credly.com/badges/ec66ac1d-0352-4a28-9362-2655be6e2339/public_url" target="_blank" class="block text-center font-semibold hover:text-sky-400 transition-colors duration-300" style="color: var(--text-color-light);">Google App Engine</a>
+                    <a href="https://www.credly.com/badges/9b1837ee-c923-4df4-82fa-26a9787e91d5/public_url" target="_blank" class="block text-center font-semibold hover:text-sky-400 transition-colors duration-300" style="color: var(--text-color-light);">Google App Engine</a>
                 </div>
                  <div class="glass-card p-6 rounded-2xl wow animate__animated animate__fadeIn" data-wow-delay="1.2s">
                     <a href="https://www.credly.com/badges/7d62a536-93d3-4f33-a099-7e697a090462/public_url" target="_blank" class="block text-center font-semibold hover:text-sky-400 transition-colors duration-300" style="color: var(--text-color-light);">Monitoring in Google Cloud</a>
@@ -359,30 +359,29 @@
                 <div class="glass-card p-8 rounded-2xl wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
                     <h3 class="text-2xl font-bold text-sky-400">Languages</h3>
                     <ul class="mt-4 space-y-2" style="color: var(--text-color-light);">
-                        <li>Python</li>
                         <li>Java</li>
+                        <li>Python</li>
                         <li>C/C++</li>
                         <li>JavaScript, HTML/CSS</li>
                     </ul>
                 </div>
                 <!-- Skill Card 2: Frameworks & Tools -->
                 <div class="glass-card p-8 rounded-2xl wow animate__animated animate__fadeIn" data-wow-delay="0.4s">
-                    <h3 class="text-2xl font-bold text-indigo-400">Frameworks & Tools</h3>
+                    <h3 class="text-2xl font-bold text-indigo-400">Frameworks</h3>
                     <ul class="mt-4 space-y-2" style="color: var(--text-color-light);">
-                        <li>PyTorch & Scikit-Learn</li>
-                        <li>NumPy & Pandas</li>
                         <li>Flask</li>
-                        <li>Git & Firebase</li>
+                        <li>Numpy</li>
+                        <li>Pandas</li>
+                        <li>PyTorch</li>
+                        <li>Scikit-Learn</li>
+                        <li>Matplotlib</li>
                     </ul>
                 </div>
                 <!-- Skill Card 3: The Math & Concepts -->
                 <div class="glass-card p-8 rounded-2xl wow animate__animated animate__fadeIn" data-wow-delay="0.6s">
-                    <h3 class="text-2xl font-bold text-purple-400">Math & Concepts</h3>
+                    <h3 class="text-2xl font-bold text-purple-400">Developer Tools</h3>
                     <ul class="mt-4 space-y-2" style="color: var(--text-color-light);">
-                        <li>Linear Algebra & Calculus</li>
-                        <li>Probability & Statistics</li>
-                        <li>Optimization Theory</li>
-                        <li>Transformers & Attention</li>
+                        <li>Git</li>
                     </ul>
                 </div>
             </div>
@@ -564,3 +563,4 @@
     </script>
 </body>
 </html>
+
