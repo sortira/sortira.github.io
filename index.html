@@ -1300,7 +1300,7 @@
         I write about ML internals at
         <a href="https://silicognition.is-a.dev/" target="_blank" rel="noopener noreferrer">silicognition.is-a.dev</a>
         &mdash; my latest:
-        <a href="https://silicognition.is-a.dev/post1.html" target="_blank" rel="noopener noreferrer">Interview deep-dive: Transformers, MoE, ResNets &amp; more &rarr;</a>
+          <a href="https://silicognition.is-a.dev/post2.html" target="_blank" rel="noopener noreferrer">can i train a transformer with only pen and paper? &rarr;</a>
       </span>
       <button class="announce-dismiss" id="announce-dismiss" aria-label="Dismiss announcement">✕</button>
     </div>
@@ -1908,10 +1908,6 @@ Currently exploring: What it means for a model to "know" something.`,
       const bar = document.getElementById('announce-bar');
       const btn = document.getElementById('announce-dismiss');
       if (!bar || !btn) return;
-      if (localStorage.getItem('announce-dismissed-post1') === '1') {
-        bar.style.display = 'none';
-        return;
-      }
       btn.addEventListener('click', () => {
         bar.style.opacity = '0';
         const h = bar.offsetHeight;
@@ -1924,7 +1920,6 @@ Currently exploring: What it means for a model to "know" something.`,
           });
         });
         setTimeout(() => { bar.style.display = 'none'; }, 420);
-        localStorage.setItem('announce-dismissed-post1', '1');
       });
     })();
 
