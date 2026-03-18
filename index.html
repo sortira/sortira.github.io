@@ -1722,8 +1722,6 @@
       const COMMANDS = {
         help: () => `<span class="t-hi">Available commands:</span>
 <span class="t-key">  whoami     </span><span class="t-dim">→</span> <span class="t-val">about Aritro</span>
-<span class="t-key">  research   </span><span class="t-dim">→</span> <span class="t-val">current research interests</span>
-<span class="t-key">  papers     </span><span class="t-dim">→</span> <span class="t-val">reading list & influences</span>
 <span class="t-key">  skills     </span><span class="t-dim">→</span> <span class="t-val">technical stack</span>
 <span class="t-key">  experience </span><span class="t-dim">→</span> <span class="t-val">work history</span>
 <span class="t-key">  contact    </span><span class="t-dim">→</span> <span class="t-val">get in touch</span>
@@ -1738,32 +1736,7 @@ and <span class="t-key">emergent behavior</span> in neural architectures.
 
 Currently exploring: What it means for a model to "know" something.`,
 
-        research: () => `<span class="t-hi">Research Interests</span>
-<span class="t-dim">─────────────────────────────────────────</span>
-<span class="t-key">Interpretability and Explainability</span>
-  → How do transformers implement algorithms?
 
-<span class="t-key">Emergent Capabilities</span>
-  → Phase transitions in large models
-  → In-context learning as meta-learning
-  → Grokking and delayed generalization
-
-<span class="t-key">Efficient Training</span>
-  → Gradient optimization geometry
-  → Loss landscape topology
-  → Neural scaling laws`,
-
-        papers: () => `<span class="t-hi">Papers I read</span>
-<span class="t-dim">─────────────────────────────────────────</span>
-<span class="t-key">[1]</span> Attention Is All You Need — Vaswani et al. 2017
-<span class="t-key">[2]</span> Grokking — Power et al. 2022
-<span class="t-key">[3]</span> Toy Models of Superposition — Elhage et al. 2022
-<span class="t-key">[4]</span> Language Models are Few-Shot Learners — Brown et al. 2020
-<span class="t-key">[5]</span> Scaling Laws for Neural Language Models — Kaplan et al. 2020
-<span class="t-key">[6]</span> In-context Learning as Gradient Descent — Akyürek et al. 2022
-<span class="t-key">[7]</span> The Bitter Lesson — Richard Sutton, 2019
-
-<span class="t-dim">Currently reading:</span> <span class="t-val">Representation Engineering — Zou et al. 2023</span>`,
 
         skills: () => `<span class="t-hi">Technical Stack</span>
 <span class="t-dim">─────────────────────────────────────────</span>
@@ -1802,6 +1775,38 @@ Currently exploring: What it means for a model to "know" something.`,
 <span class="t-hi">Access granted. Please reach out:</span>
 <span class="t-val">aritro.shome.official@gmail.com</span>`,
       };
+
+      // ── DISABLED COMMANDS (kept in codebase, not accessible) ──
+      /*
+      DISABLED_COMMANDS = {
+        research: () => `<span class="t-hi">Research Interests</span>
+<span class="t-dim">─────────────────────────────────────────</span>
+<span class="t-key">Interpretability and Explainability</span>
+  → How do transformers implement algorithms?
+
+<span class="t-key">Emergent Capabilities</span>
+  → Phase transitions in large models
+  → In-context learning as meta-learning
+  → Grokking and delayed generalization
+
+<span class="t-key">Efficient Training</span>
+  → Gradient optimization geometry
+  → Loss landscape topology
+  → Neural scaling laws`,
+
+        papers: () => `<span class="t-hi">Papers I read</span>
+<span class="t-dim">─────────────────────────────────────────</span>
+<span class="t-key">[1]</span> Attention Is All You Need — Vaswani et al. 2017
+<span class="t-key">[2]</span> Grokking — Power et al. 2022
+<span class="t-key">[3]</span> Toy Models of Superposition — Elhage et al. 2022
+<span class="t-key">[4]</span> Language Models are Few-Shot Learners — Brown et al. 2020
+<span class="t-key">[5]</span> Scaling Laws for Neural Language Models — Kaplan et al. 2020
+<span class="t-key">[6]</span> In-context Learning as Gradient Descent — Akyürek et al. 2022
+<span class="t-key">[7]</span> The Bitter Lesson — Richard Sutton, 2019
+
+<span class="t-dim">Currently reading:</span> <span class="t-val">Representation Engineering — Zou et al. 2023</span>`,
+      };
+      */
 
       function print(cmd, result) {
         if (result === null) return;
