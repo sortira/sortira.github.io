@@ -76,6 +76,11 @@
             background-image: radial-gradient(circle, var(--dot-color) 1px, transparent 1px);
             background-size: 28px 28px;
             transition: var(--theme-transition);
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="8" cy="8" r="5" fill="%239e5c55"/><path d="M8,1 L8,15 M1,8 L15,8" stroke="%239e5c55" stroke-width="1.5" stroke-linecap="round"/></svg>') 8 8, auto;
+        }
+        
+        [data-theme="dark"] {
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="8" cy="8" r="5" fill="%23c0635a"/><path d="M8,1 L8,15 M1,8 L15,8" stroke="%23c0635a" stroke-width="1.5" stroke-linecap="round"/></svg>') 8 8, auto;
         }
         /* ── deco blobs ── */
         
@@ -441,6 +446,17 @@
             font-weight: 600;
             color: var(--rose);
             margin-top: 2px;
+        }
+        
+        .timeline-org a {
+            color: var(--rose);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .timeline-org a:hover {
+            color: var(--rose-soft);
+            text-decoration: underline;
         }
         
         .timeline-details {
@@ -1281,7 +1297,7 @@
         <a href="#projects" onclick="closeMobileMenu()">Projects</a>
         <a href="#skills" onclick="closeMobileMenu()">Skills</a>
         <a href="#contact" onclick="closeMobileMenu()">Contact</a>
-        <a href="https://drive.google.com/file/d/1ZA6kmbFYmR6_aybZ7FQpkL4j8p1pEtF6/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume ↗</a>
+        <a href="https://drive.google.com/file/d/1uTyt7sz1rpzCf83UCCb5PAIftLDFaPhf/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume ↗</a>
     </div>
 
     <!-- Announcement bar -->
@@ -1370,7 +1386,7 @@
                 <div class="timeline-header">
                     <div>
                         <h3 class="timeline-role">Research Intern</h3>
-                        <p class="timeline-org">AI4Bharat</p>
+                        <p class="timeline-org"><a href="http://ai4bharat.iitm.ac.in/" target="_blank" rel="noopener noreferrer">AI4Bharat</a></p>
                     </div>
                     <time class="timeline-date">Mar 2026 – Present</time>
                 </div>
@@ -1384,7 +1400,7 @@
                 <div class="timeline-header">
                     <div>
                         <h3 class="timeline-role">AI Engineer Intern</h3>
-                        <p class="timeline-org">Sarvam AI</p>
+                        <p class="timeline-org"><a href="https://sarvam.ai" target="_blank" rel="noopener noreferrer">Sarvam AI</a></p>
                     </div>
                     <time class="timeline-date">Aug – Dec 2025</time>
                 </div>
