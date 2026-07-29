@@ -1,0 +1,27 @@
+# Aritro Shome (sortira)
+
+> Personal website of Aritro Shome (a.k.a. sortira), a student research engineer working on interpretability and alignment. Currently a research intern at AI4Bharat (visual reasoning, multimodal & multilingual interpretability); previously an AI engineer intern at Sarvam AI. Interests: reasoning models, RL, synthetic data, and local/edge AI.
+
+The site is a single-page portfolio hosted at https://sortira.github.io/, plus an "other" page for secondary details. Clean markdown versions of each page are linked below.
+
+## Main
+
+- [Home](https://sortira.github.io/index.html.md): Bio, current and past experience (AI4Bharat, Sarvam AI), education, and solo research projects (forgeformer; seven deadly sins of gemma).
+- [Other](https://sortira.github.io/other.html.md): Achievements and hackathon wins, smaller builds, certifications, skills, and extracurricular awards.
+
+## Writing
+
+- [silicognition](https://silicognition.is-a.dev/): Technical blog on solo research projects and encounters with AI.
+
+## Profiles
+
+- [GitHub](https://github.com/sortira): Code and project repositories.
+- [LinkedIn](https://www.linkedin.com/in/aritroshome/): Professional profile.
+- [Twitter / X](https://x.com/silicognition): @silicognition.
+- [Resume](https://drive.google.com/file/d/1JtkdZkX85Hy6TOKlFG-4fkhxviCFgkAP/view?usp=sharing): PDF resume.
+
+## Optional
+
+- [forgeformer — writeup](https://silicognition.is-a.dev/post2.html): Hand-designed 2-layer transformer that adds two-digit numbers with no gradient descent; interpretable weights built from the ground up.
+- [forgeformer — demo](https://aritro.is-a.dev/forgeformer): Interactive demo.
+- [seven deadly sins of gemma](https://silicognition.is-a.dev/post3.html): Steering vectors per "sin" in gemma-2-2b, verified via steering examples and activation patching.
