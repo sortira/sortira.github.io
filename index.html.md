@@ -1,39 +1,83 @@
-# aritro shome
+# Aritro Shome (sortira)
 
-(or *sortira*)
+**ml · systems · research**
 
-Links: [resume](https://drive.google.com/file/d/1JtkdZkX85Hy6TOKlFG-4fkhxviCFgkAP/view?usp=sharing) · [github](https://github.com/sortira) · [linkedin](https://www.linkedin.com/in/aritroshome/) · [twitter](https://x.com/silicognition) · [email](mailto:aritro.shome.official@gmail.com)
+I like taking systems apart to see how they actually work — which circuits a multilingual vision-language model really uses, or why a production pipeline falls over under load. Research and engineering feel like *the same instinct* pointed at different layers.
 
-Student research engineer (interpretability and alignment).
+Currently digging into: distributed systems, database internals, concurrency, algorithms & theory. Early days — mostly reading and small experiments.
 
-**interests:** reasoning models, RL, synthetic data, local and edge AI
+Links: [résumé](https://aritro.is-a.dev/resume.pdf) · [blog](https://silicognition.is-a.dev/) · [github](https://github.com/sortira) · [linkedin](https://www.linkedin.com/in/aritroshome/) · [twitter](https://x.com/silicognition) · [email](mailto:aritro.shome.official@gmail.com)
 
-Currently research intern at [AI4Bharat](http://ai4bharat.iitm.ac.in/) (visual reasoning, multimodal multilingual interp). Previously AI engineer intern at [Sarvam AI](https://sarvam.ai) — built the eval framework for an NVIDIA lipsync model and modularized the dubbing pipeline ([video](https://www.youtube.com/watch?v=KNEJcCtoE4Ml)).
+## Now
 
-**hobbies:** discussing tech, sports and games with friends, playing computer games, going on city walks. If you're in Calcutta by chance, reach out and we can meet!
-
-## Writing
-
-[silicognition.is-a.dev](https://silicognition.is-a.dev/) — my technical blog on solo research projects and encounters with AI.
+- **aug 2026** — tracing reasoning circuits in Gemma and Qwen across Indic languages and model scales at AI4Bharat.
+- **mar 2026** — joined AI4Bharat, IIT Madras as a research intern.
+- **2026** — wrote up ForgeFormer and Seven Deadly Sins of Gemma, two solo interpretability projects.
+- **dec 2025** — finished an AI engineering internship at Sarvam AI on the media & dubbing team.
 
 ## Experience
 
-- **[mar 2026 – present] research intern @ [AI4Bharat](http://ai4bharat.iitm.ac.in/)** — circuit tracing for reasoning problems posed in various modalities across model sizes and languages for various SoTA open models.
-- **[aug 2025 – dec 2025] ai engineer intern @ [Sarvam AI](https://sarvam.ai)** — eval framework for NVIDIA lipsync; detected and fixed a 500% file size increase in lip-sync model output; modularized the dubbing pipeline; a/b tests on prompt structures.
+### Research Intern — [AI4Bharat](https://ai4bharat.iitm.ac.in/), IIT Madras (mar 2026 – present)
 
-## Solo research projects
+- Investigating mechanistic interpretability and circuit tracing of SoTA open models (Gemma, Qwen) on reasoning tasks posed across modalities, languages and model scales — focused on vision-language models over Indic inputs.
+- Ran 40,000+ instrumented forward passes for activation capture on multi-billion-parameter models under a hard 24 GB VRAM ceiling, and built pre-experiment component-attribution scripts to isolate critical circuits before committing to full runs.
+- Engineered a memory-efficient activation-patching framework: disabled fused and attention-kernel optimisations to expose per-layer activations, then managed the resulting non-linear VRAM growth to keep large models inside budget.
 
-- **[forgeformer](https://silicognition.is-a.dev/post2.html)** — hand-designed 2-layer transformer that adds two-digit numbers; no gradient descent. Demonstrates transformer internals in a model designed with interpretable weights from the ground up. [writeup](https://silicognition.is-a.dev/post2.html) · [demo](https://aritro.is-a.dev/forgeformer)
-- **[seven deadly sins of gemma](https://silicognition.is-a.dev/post3.html)** — steering vectors per sin in gemma-2-2b; verified the vectors via steering examples and activation patch analysis. [writeup](https://silicognition.is-a.dev/post3.html)
+*Stack: Python, PyTorch, Hugging Face, CUDA, mixed precision, Linux.*
 
-*Some of the works done with other orgs are not publishable.*
+### AI Engineer Intern — [Sarvam AI](https://www.sarvam.ai/), media & dubbing (aug 2025 – dec 2025)
 
-## Education
+- Built an automated evaluation framework for an NVIDIA lip-sync model; the quantitative pipeline caught and resolved a bug causing ~500% variance in output video file sizes.
+- Redesigned the production dubbing pipeline — replaced brittle hard-coded prompt harnesses with modular YAML instruction blocks that let the model's chain-of-thought infer context, raising translation quality; picked the final configuration by A/B test.
+- [Pipeline in production (video)](https://www.youtube.com/watch?v=KNEJcCtoE4M)
 
-- **[2024 – 2028] B.Tech, Information Technology @ IIEST Shibpur** — CGPA 9.15
-- **[2010 – 2024] M. P. Birla Foundation Higher Secondary School** — ISC 95.3% / ICSE 98.3%
-- **INSPIRE Scholar — Govt. of India** (awarded to the top 1% in the higher-secondary board qualifying exam)
+*Stack: Python, YAML, data pipelines, LLM APIs, A/B testing, Git.*
 
-## More
+## Selected work
 
-→ [other](https://sortira.github.io/other.html.md) — certifications, hackathon wins, skills, smaller builds & awards
+### ForgeFormer (2026)
+
+Hand-designed an interpretable 2-layer transformer that performs two-digit addition with manually-set weights and no gradient descent — building attention and MLP computation from first principles to show exactly what each component contributes.
+
+*Stack: Python, PyTorch, NumPy.* — [Writeup](https://silicognition.is-a.dev/post2.html) · [interactive demo](https://aritro.is-a.dev/forgeformer/)
+
+### Seven Deadly Sins of Gemma (2026)
+
+Replicated Anthropic's persona / emotion-vector methodology to extract a steering vector for each of the seven deadly sins in Gemma, on a single consumer GPU. Verified vector correctness through targeted steering and activation-patching experiments rather than eyeballing generations.
+
+*Stack: Python, PyTorch, Hugging Face, Gemma.* — [Writeup](https://silicognition.is-a.dev/post3.html)
+
+### AlponaGen (oct 2025)
+
+Built a modular Python engine that generates alpona (Bengali folk art) through fractal-based layering, with an extensible OOP style-registration system. Published a 13,000-image synthetic dataset at 1024×1024 on Kaggle for generative-AI research.
+
+*Stack: Python, NumPy, OOP design.* — [GitHub](https://github.com/sortira/alpona-gen) · [dataset on Kaggle](https://www.kaggle.com/datasets/ar1tr0/alpona-gen)
+
+*Some work with partner orgs is unpublished. More builds on the [other page](https://aritro.is-a.dev/other.html.md).*
+
+## Writing
+
+[silicognition.is-a.dev](https://silicognition.is-a.dev/) — longer writeups on solo projects, and notes from taking things apart.
+
+## Education, awards & teaching
+
+**Education**
+
+- B.Tech, Information Technology — IIEST Shibpur (2024 – 2028), CGPA 9.15/10
+- INSPIRE Scholarship — Government of India, awarded to the top 1% of the higher-secondary cohort
+
+**Selected awards**
+
+- 1st — TensorQuest ML Hackathon, Instruo 2025 (100+ teams across India)
+- 1st — Brain Dead ML Hackathon, Revelation 2025 (~200 teams)
+- 1st — Prof. Brahma Prakash Memorial Paper Presentation, IGCAR Kalpakkam, 2023 (500+ applicants; paper on AI/ML in materials research)
+
+**Teaching**
+
+- AI/ML Co-Lead — Google Developer Groups on Campus, IIEST Shibpur. Ran sessions on deep learning and transformer architecture; mentored a junior into an internship.
+
+---
+
+If you're building ML systems, research tooling, or infrastructure that has to hold up in production — I'd like to hear from you: aritro.shome.official@gmail.com. I'm in Calcutta; happy to meet for a walk.
+
+Last updated: 2 August 2026.

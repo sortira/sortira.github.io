@@ -1,483 +1,344 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>aritro shome</title>
-    <meta name="description" content="Aritro Shome (sortira) is a student research engineer working on multimodal and multilingual interpretability, alignment, and safety. Research intern at AI4Bharat; previously AI engineer intern at Sarvam AI." />
+    <title>Aritro Shome — machine learning, systems &amp; research engineering</title>
+    <meta name="description" content="Aritro Shome (sortira) — research intern at AI4Bharat, IIT Madras; previously AI engineer intern at Sarvam AI. Works across ML research, machine-learning engineering and systems: interpretability, evaluation frameworks, and production data pipelines." />
     <meta name="author" content="Aritro Shome" />
-    <meta name="keywords" content="Aritro Shome, sortira, AI interpretability, alignment, safety, multimodal, multilingual, AI4Bharat, Sarvam AI, mechanistic interpretability, machine learning researcher" />
-    <link rel="canonical" href="https://sortira.github.io/" />
+    <link rel="canonical" href="https://aritro.is-a.dev/" />
+    <meta name="theme-color" content="#0b0b0d" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#fcfbf9" media="(prefers-color-scheme: light)" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="Aritro Shome — AI Research Engineer | Interpretability &amp; Alignment" />
-    <meta property="og:description" content="Student research engineer working on multimodal and multilingual interpretability, alignment, and safety. Research intern at AI4Bharat; previously at Sarvam AI." />
-    <meta property="og:url" content="https://sortira.github.io/" />
-    <meta property="og:image" content="https://sortira.github.io/aritro-photo.jpg" />
+    <meta property="og:site_name" content="Aritro Shome" />
+    <meta property="og:title" content="Aritro Shome — machine learning, systems &amp; research engineering" />
+    <meta property="og:description" content="Research intern at AI4Bharat, IIT Madras. Previously Sarvam AI. ML research, ML engineering and systems." />
+    <meta property="og:url" content="https://aritro.is-a.dev/" />
+    <meta property="og:image" content="https://aritro.is-a.dev/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Aritro Shome — machine learning, systems and research engineering." />
     <meta property="profile:first_name" content="Aritro" />
     <meta property="profile:last_name" content="Shome" />
     <meta property="profile:username" content="sortira" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@silicognition" />
     <meta name="twitter:creator" content="@silicognition" />
-    <meta name="twitter:title" content="Aritro Shome — AI Research Engineer" />
-    <meta name="twitter:description" content="Student research engineer working on multimodal and multilingual interpretability, alignment, and safety." />
-    <meta name="twitter:image" content="https://sortira.github.io/aritro-photo.jpg" />
+    <meta name="twitter:title" content="Aritro Shome — machine learning, systems &amp; research engineering" />
+    <meta name="twitter:description" content="Research intern at AI4Bharat, IIT Madras. Previously Sarvam AI. ML research, ML engineering and systems." />
+    <meta name="twitter:image" content="https://aritro.is-a.dev/og.png" />
 
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="icon-32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="icon-512.png" sizes="512x512" type="image/png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300..600&family=Inter:wght@400..600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="site.css" />
 
-    <style>
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        html {
-            background-color: #fafaf7;
-            min-height: 100%;
-        }
-        
-        body {
-            font-family: 'Source Serif 4', 'Source Serif Pro', Georgia, 'Times New Roman', Times, serif;
-            font-size: 15px;
-            line-height: 1.55;
-            color: #1a1a1a;
-            max-width: none;
-            margin: 0;
-            padding: 32px 64px 28px;
-            background: transparent;
-        }
-        
-        a {
-            color: #2c5282;
-            text-decoration: underline;
-            text-decoration-thickness: 1px;
-            text-underline-offset: 2.5px;
-        }
-        
-        a:hover {
-            color: #3a7ca5;
-        }
-        
-        h1 {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            font-size: 19px;
-            font-weight: 700;
-            letter-spacing: -0.01em;
-        }
-        
-        h2 {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            font-size: 11.5px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: #2c5282;
-            margin-bottom: 12px;
-            padding-bottom: 4px;
-            border-bottom: 1px solid rgba(44, 82, 130, 0.18);
-        }
-        
-        p {
-            margin-bottom: 8px;
-        }
-        
-        em {
-            font-style: italic;
-        }
-        
-        ol,
-        ul {
-            padding-left: 20px;
-            margin-bottom: 8px;
-        }
-        
-        li {
-            margin-bottom: 3px;
-        }
-        
-        header {
-            margin-bottom: 22px;
-        }
-        
-        header>*+* {
-            margin-top: 8px;
-        }
-        
-        header h1 {
-            margin-bottom: 0;
-        }
-        
-        .intro {
-            display: flex;
-            align-items: center;
-            gap: 18px;
-        }
-        
-        .intro img {
-            width: 88px;
-            height: 88px;
-            border-radius: 12px;
-            display: block;
-            flex-shrink: 0;
-        }
-        
-        .intro .who>*+* {
-            margin-top: 4px;
-        }
-        
-        .intro .who p {
-            margin-bottom: 0;
-        }
-        
-        .links-row {
-            font-size: 14px;
-            margin-top: 6px !important;
-        }
-        
-        .chips {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            margin-top: 10px !important;
-        }
-        
-        .chip {
-            display: inline-block;
-            padding: 2px 10px;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            font-size: 11.5px;
-            font-weight: 500;
-            line-height: 1.5;
-            background: rgba(44, 82, 130, 0.07);
-            color: #2c5282;
-            border: 1px solid rgba(44, 82, 130, 0.22);
-            border-radius: 999px;
-            letter-spacing: 0.01em;
-        }
-        
-        .bio {
-            max-width: 78ch;
-        }
-        
-        .bio>*+* {
-            margin-top: 0;
-        }
-        
-        .hl {
-            color: #2c5282;
-            font-weight: 700;
-        }
-        
-        .meta {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .meta li {
-            margin-bottom: 2px;
-        }
-        
-        .meta li::before {
-            content: "- ";
-        }
-        
-        section {
-            margin-bottom: 22px;
-        }
-        
-        .grid-3 {
-            display: grid;
-            grid-template-columns: 1fr 1.15fr 1fr;
-            gap: 32px;
-            margin-bottom: 18px;
-        }
-        
-        section .col h2 {
-            margin-bottom: 10px;
-        }
-        
-        section .col ol {
-            padding-left: 18px;
-        }
-        
-        section .col li {
-            margin-bottom: 7px;
-        }
-        
-        .col .q {
-            color: #2c5282;
-            font-weight: 700;
-        }
-        
-        .more-link {
-            margin-top: 8px;
-            font-size: 14px;
-        }
-        
-        .blog-banner {
-            display: flex;
-            align-items: baseline;
-            flex-wrap: wrap;
-            gap: 14px;
-            padding: 12px 18px;
-            margin-bottom: 22px;
-            background: rgba(44, 82, 130, 0.045);
-            border: 1px solid rgba(44, 82, 130, 0.16);
-            border-left: 3px solid #2c5282;
-            border-radius: 3px;
-        }
-        
-        .blog-banner .label {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            font-size: 10.5px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: #2c5282;
-        }
-        
-        .blog-banner .desc {
-            color: #4a4a4a;
-            font-size: 14.5px;
-        }
-        
-        .blog-banner a.blog-url {
-            font-weight: 600;
-        }
-        
-        .footer {
-            text-align: center;
-            font-size: 13px;
-            color: #6b7280;
-            margin-top: 18px;
-        }
-        
-        .footer .accent {
-            color: #2c5282;
-        }
-        
-        .webring-section {
-            text-align: center;
-            margin-top: 14px;
-            margin-bottom: 6px;
-        }
-        
-        .webring-label {
-            display: block;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            font-size: 10px;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: #9ca3af;
-            text-decoration: none;
-            margin-bottom: 6px;
-        }
-        
-        .webring-label:hover {
-            color: #6b7280;
-        }
-        
-        .webring {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-        }
-        
-        .webring img {
-            display: block;
-            image-rendering: pixelated;
-        }
-        
-        .webring a.webring-nav {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            font-size: 15px;
-            color: #2c5282;
-            text-decoration: none;
-        }
-        
-        .webring a.webring-nav:hover {
-            color: #3a7ca5;
-        }
-        
-        @media (max-width: 1100px) {
-            body {
-                padding: 32px 32px 32px;
-            }
-            .grid-3 {
-                grid-template-columns: 1fr 1fr;
-                gap: 32px;
-            }
-            .grid-3 .col.projects {
-                grid-column: 1 / -1;
-            }
-        }
-        
-        @media (max-width: 760px) {
-            body {
-                padding: 28px 22px 28px;
-                font-size: 13.5px;
-            }
-            .intro {
-                gap: 14px;
-            }
-            .intro img {
-                width: 64px;
-                height: 64px;
-                border-radius: 10px;
-            }
-            .grid-3 {
-                grid-template-columns: 1fr;
-                gap: 28px;
-            }
-            .grid-3 .col.projects {
-                grid-column: auto;
-            }
-        }
-    </style>
+    <script>
+        /* read the saved theme before first paint so there is no flash */
+        (function () {
+            var s = null;
+            try { s = localStorage.getItem('theme'); } catch (e) {}
+            document.documentElement.setAttribute('data-theme',
+                s || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'));
+        })();
+    </script>
+    <script src="site.js" defer></script>
     <script data-goatcounter="https://portfolio1.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Aritro Shome",
             "alternateName": "sortira",
-            "url": "https://sortira.github.io/",
-            "image": "https://sortira.github.io/aritro-photo.jpg",
+            "url": "https://aritro.is-a.dev/",
+            "image": "https://aritro.is-a.dev/portrait.jpg",
             "email": "aritro.shome.official@gmail.com",
-            "sameAs": [
-                "https://github.com/sortira",
-                "https://www.linkedin.com/in/aritroshome/",
-                "https://x.com/silicognition"
-            ],
             "jobTitle": "Research Intern",
-            "worksFor": {
-                "@type": "Organization",
-                "name": "AI4Bharat",
-                "url": "http://ai4bharat.iitm.ac.in/"
-            },
-            "alumniOf": {
-                "@type": "CollegeOrUniversity",
-                "name": "IIEST Shibpur"
-            },
-            "knowsAbout": ["AI interpretability", "alignment", "safety", "multimodal AI", "multilingual NLP", "reinforcement learning", "mechanistic interpretability", "machine learning", "artificial intelligence", "local and edge ai",
-                "software engineering"
-            ]
+            "description": "Student engineer working across machine-learning research, ML engineering and systems — interpretability, evaluation frameworks and production data pipelines.",
+            "sameAs": ["https://github.com/sortira", "https://www.linkedin.com/in/aritroshome/", "https://x.com/silicognition", "https://silicognition.is-a.dev/"],
+            "worksFor": { "@type": "Organization", "name": "AI4Bharat, IIT Madras", "url": "https://ai4bharat.iitm.ac.in/" },
+            "alumniOf": { "@type": "CollegeOrUniversity", "name": "Indian Institute of Engineering Science and Technology, Shibpur" },
+            "knowsAbout": ["software engineering", "machine learning engineering", "mechanistic interpretability", "model evaluation", "data pipelines", "distributed systems", "concurrency", "database internals", "algorithms and data structures", "vision-language models", "multilingual NLP", "CUDA", "PyTorch"]
         }
     </script>
 </head>
 
 <body>
+    <a class="skip" href="#main">skip to content</a>
 
-    <header>
-        <div class="intro">
-            <img src="aritro-photo.jpg" alt="aritro shome — photo" />
-            <div class="who">
-                <h1>aritro shome</h1>
-                <p>(or <em>sortira</em>)</p>
-                <p class="links-row">
-                    <a href="https://drive.google.com/file/d/1JtkdZkX85Hy6TOKlFG-4fkhxviCFgkAP/view?usp=sharing" target="_blank" rel="noopener noreferrer">resume</a> /
-                    <a href="https://github.com/sortira" target="_blank" rel="noopener noreferrer">github</a> /
-                    <a href="https://www.linkedin.com/in/aritroshome/" target="_blank" rel="noopener noreferrer">linkedin</a> /
-                    <a href="https://x.com/silicognition" target="_blank" rel="noopener noreferrer">twitter</a> /
-                    <a href="mailto:aritro.shome.official@gmail.com">email</a>
-                </p>
-                <!-- <div class="chips" aria-label="research interests">
-                    <span class="chip">interpretability</span>
-                    <span class="chip">reasoning</span>
-                    <span class="chip">alignment &amp; safety research</span>
-                    <span class="chip">reinforcement learning</span>
-                </div> -->
-            </div>
+    <div class="shell">
+        <div class="topbar">
+            <a class="wordmark" href="/" aria-label="Aritro Shome — home">
+                <img src="icon-32.png" alt="" width="22" height="22" />
+                <span>aritro shome</span>
+            </a>
+            <button class="theme-btn" id="theme-btn" type="button" aria-label="Switch colour theme">
+                <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.4M12 19.2v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.4 12h2.4M19.2 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
+                <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.4A8.6 8.6 0 1 1 9.6 3.5a6.9 6.9 0 0 0 10.9 10.9Z"/></svg>
+                <span id="theme-label">dark</span>
+            </button>
         </div>
+    </div>
 
-        <div class="bio">
-            <p>student research engineer (interpretability and alignment) </p>
-            <p><span class="hl">interests:</span> reasoning models, RL, synthetic data, local and edge ai</p>
-            <p>currently research intern at <a href="http://ai4bharat.iitm.ac.in/" target="_blank" rel="noopener noreferrer">AI4Bharat</a> (visual reasoning, multimodal multilingual interp). previously ai engineer intern at <a href="https://sarvam.ai" target="_blank"
-                    rel="noopener noreferrer">Sarvam AI</a> — built the eval framework for an NVIDIA lipsync model + modularized the dubbing pipeline (<a href="https://www.youtube.com/watch?v=KNEJcCtoE4Ml" target="_blank" rel="noopener noreferrer">video</a>).</p>
-            <p><span class="hl">hobbies:</span> discussing tech, sports and games with friends, playing computer games, going on city walks. if you're in calcutta by chance, reach out and we can meet!</p>
-        </div>
-    </header>
+    <main id="main">
+        <div class="shell">
 
-    <main>
+            <!-- ============================ hero ============================ -->
+            <header class="hero">
+                <div class="hero-grid">
+                    <div>
+                        <p class="eyebrow">ml · systems · research</p>
+                        <h1>Aritro Shome</h1>
+                        <p class="handle">sortira</p>
 
-        <div class="blog-banner">
-            <span class="label">writing</span>
-            <a class="blog-url" href="https://silicognition.is-a.dev/" target="_blank" rel="noopener noreferrer">silicognition.is-a.dev</a>
-            <span class="desc"> my technical blog on solo research projects, encounters with ai.</span>
-        </div>
+                        <p class="lede">I like taking systems apart to see how they actually work — which circuits a multilingual vision-language model really uses, or why a production pipeline falls over under load. Research and engineering feel like
+                            <em>the same instinct</em> pointed at different layers.</p>
 
-        <section class="grid-3">
-            <div class="col experience">
-                <h2>experience</h2>
-                <ol>
-                    <li>[mar 2026 - present] research intern @ <a href="http://ai4bharat.iitm.ac.in/" target="_blank" rel="noopener noreferrer">AI4Bharat</a> — circuit tracing for reasoning problems posed in various modalities across model sizes, languages
-                        for various SoTA open models.</li>
-                    <li>[aug 2025 - dec 2025] ai engineer intern @ <a href="https://sarvam.ai" target="_blank" rel="noopener noreferrer">Sarvam AI</a> — eval framework for NVIDIA lipsync; detected and fixed <span class="hl">500%</span> file size increase
-                        in lip-sync model output; modularized dubbing pipeline; a/b tests on prompt structures</li>
-                </ol>
-            </div>
+                        <nav class="linkrow" aria-label="Profiles and documents">
+                            <a class="primary" href="resume.pdf">résumé ↓</a>
+                            <a href="https://silicognition.is-a.dev/" target="_blank" rel="noopener noreferrer">blog</a>
+                            <a href="https://github.com/sortira" target="_blank" rel="noopener noreferrer">github</a>
+                            <a href="https://www.linkedin.com/in/aritroshome/" target="_blank" rel="noopener noreferrer">linkedin</a>
+                            <a href="https://x.com/silicognition" target="_blank" rel="noopener noreferrer">twitter</a>
+                            <a href="mailto:aritro.shome.official@gmail.com">email</a>
+                        </nav>
+                    </div>
 
-            <div class="col projects">
-                <h2>solo research projects</h2>
-                <ol>
+                    <div class="figure-stack">
+                        <img class="portrait" src="portrait.jpg" width="226" height="226" alt="Aritro Shome" />
+                        <aside class="sidenote">
+                            <h2>currently digging into</h2>
+                            <ul>
+                                <li>distributed systems</li>
+                                <li>database internals</li>
+                                <li>concurrency</li>
+                                <li>algorithms &amp; theory</li>
+                            </ul>
+                            <p>early days — mostly reading and small experiments.</p>
+                        </aside>
+                    </div>
+                </div>
+            </header>
+
+            <!-- ============================ now ============================= -->
+            <section aria-labelledby="s-now">
+                <div class="sec-head">
+                    <span class="idx">01</span>
+                    <h2 id="s-now">now</h2>
+                </div>
+                <ul class="now">
                     <li>
-                        <a href="https://silicognition.is-a.dev/post2.html" target="_blank" rel="noopener noreferrer"><strong>forgeformer</strong></a> — hand-designed 2-layer transformer that adds two-digit numbers; no gradient descent. demonstrated transformer
-                        internals in a model designed with interpretable weights from ground-up.<br><a href="https://silicognition.is-a.dev/post2.html" target="_blank" rel="noopener noreferrer">[writeup]</a> · <a href="https://aritro.is-a.dev/forgeformer"
-                            target="_blank" rel="noopener noreferrer">[demo]</a>
+                        <time datetime="2026-08">aug 2026</time>
+                        <p>tracing reasoning circuits in <b>Gemma</b> and <b>Qwen</b> across Indic languages and model scales at AI4Bharat.</p>
                     </li>
                     <li>
-                        <a href="https://silicognition.is-a.dev/post3.html" target="_blank" rel="noopener noreferrer"><strong>seven deadly sins of gemma</strong></a> — steering vectors per sin in <span class="hl">gemma-2-2b</span>; verified the vectors
-                        via steering examples and activation patch analysis. <a href="https://silicognition.is-a.dev/post3.html" target="_blank" rel="noopener noreferrer">[writeup]</a>
+                        <time datetime="2026-03">mar 2026</time>
+                        <p>joined <b>AI4Bharat</b>, IIT Madras as a research intern.</p>
                     </li>
-                    <p><i>some of the works done with other orgs are not publishable.</i></p>
-                </ol>
-            </div>
+                    <li>
+                        <time datetime="2026">2026</time>
+                        <p>wrote up <b>ForgeFormer</b> and <b>Seven Deadly Sins of Gemma</b> — two solo interpretability projects.</p>
+                    </li>
+                    <li>
+                        <time datetime="2025-12">dec 2025</time>
+                        <p>finished an AI engineering internship at <b>Sarvam AI</b> on the media &amp; dubbing team.</p>
+                    </li>
+                </ul>
+            </section>
 
-            <div class="col education">
-                <h2>education</h2>
-                <ol>
-                    <li>[2024 — 2028] b.tech, information technology @ <span class="hl">IIEST Shibpur</span> — <span class="hl">CGPA 9.15</span></li>
-                    <li>[2010 — 2024] m. p. birla foundation higher secondary school — <span class="hl">ISC 95.3%</span> / <span class="hl">ICSE 98.3%</span></li>
-                    <li><span class="hl">INSPIRE scholar — Govt. of India</span> (awarded to top 1% in the higher-secondary board qualifying exam)</li>
-                </ol>
-            </div>
-        </section>
+            <!-- ======================= research & eng ======================= -->
+            <section aria-labelledby="s-res">
+                <div class="sec-head">
+                    <span class="idx">02</span>
+                    <h2 id="s-res">experience</h2>
+                </div>
 
-        <p class="more-link">→ <a href="other.html">other</a> — certifications, hackathon wins, skills, smaller builds &amp; awards</p>
+                <article class="entry">
+                    <div class="entry-top">
+                        <h3>Research Intern</h3>
+                        <span class="when">mar 2026 — present</span>
+                    </div>
+                    <p class="entry-org"><a href="https://ai4bharat.iitm.ac.in/" target="_blank" rel="noopener noreferrer">AI4Bharat</a>, IIT Madras</p>
+                    <ul>
+                        <li>Investigating <strong>mechanistic interpretability and circuit tracing</strong> of SoTA open models (Gemma, Qwen) on reasoning tasks posed across modalities, languages and model scales — focused on vision-language models over
+                            Indic inputs.</li>
+                        <li>Ran <strong>40,000+ instrumented forward passes</strong> for activation capture on multi-billion-parameter models under a hard 24 GB VRAM ceiling, and built pre-experiment component-attribution scripts to isolate critical
+                            circuits before committing to full runs.</li>
+                        <li>Engineered a <strong>memory-efficient activation-patching framework</strong>: disabled fused and attention-kernel optimisations to expose per-layer activations, then managed the resulting non-linear VRAM growth to keep large
+                            models inside budget.</li>
+                    </ul>
+                    <div class="tags">
+                        <span>Python</span><span>PyTorch</span><span>Hugging Face</span><span>CUDA</span><span>mixed precision</span><span>Linux</span>
+                    </div>
+                </article>
 
-        <div class="webring-section">
-            <a class="webring-label" href="https://en.wikipedia.org/wiki/Webring" target="_blank" rel="noopener noreferrer">webrings i am a part of</a>
-            <div class="webring" aria-label="threadlocked webring">
+                <article class="entry">
+                    <div class="entry-top">
+                        <h3>AI Engineer Intern</h3>
+                        <span class="when">aug 2025 — dec 2025</span>
+                    </div>
+                    <p class="entry-org"><a href="https://www.sarvam.ai/" target="_blank" rel="noopener noreferrer">Sarvam AI</a> — media &amp; dubbing</p>
+                    <ul>
+                        <li>Built an <strong>automated evaluation framework</strong> for an NVIDIA lip-sync model; the quantitative pipeline caught and resolved a bug causing ~500% variance in output video file sizes.</li>
+                        <li>Redesigned the production <strong>dubbing pipeline</strong> — replaced brittle hard-coded prompt harnesses with modular YAML instruction blocks that let the model's chain-of-thought infer context, raising translation quality;
+                            picked the final configuration by A/B test.</li>
+                    </ul>
+                    <div class="tags">
+                        <span>Python</span><span>YAML</span><span>data pipelines</span><span>LLM APIs</span><span>A/B testing</span><span>Git</span>
+                    </div>
+                    <div class="refs">
+                        <a href="https://www.youtube.com/watch?v=KNEJcCtoE4M" target="_blank" rel="noopener noreferrer">↗ pipeline in production (video)</a>
+                    </div>
+                </article>
+            </section>
 
-                <a href="https://ring.seggs.lol" target="_blank" rel="noopener noreferrer" title="threadlocked webring">
-                    <img width="88" height="31" alt="threadlocked webring badge" src="https://github.com/user-attachments/assets/86fc434f-8b29-4628-b0a3-33cdf4d487c0" />
-                </a>
+            <!-- ======================== selected work ======================= -->
+            <section aria-labelledby="s-work">
+                <div class="sec-head">
+                    <span class="idx">03</span>
+                    <h2 id="s-work">selected work</h2>
+                    <span class="aside">solo, with writeups</span>
+                </div>
 
-            </div>
+                <article class="entry">
+                    <div class="entry-top">
+                        <h3>ForgeFormer</h3>
+                        <span class="when">2026</span>
+                    </div>
+                    <ul>
+                        <li>Hand-designed an <strong>interpretable 2-layer transformer</strong> that performs two-digit addition with manually-set weights and <strong>no gradient descent</strong> — building attention and MLP computation from first
+                            principles to show exactly what each component contributes.</li>
+                    </ul>
+                    <div class="tags">
+                        <span>Python</span><span>PyTorch</span><span>NumPy</span>
+                    </div>
+                    <div class="refs">
+                        <a href="https://silicognition.is-a.dev/post2.html" target="_blank" rel="noopener noreferrer">↗ writeup</a>
+                        <a href="https://aritro.is-a.dev/forgeformer/">↗ interactive demo</a>
+                    </div>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-top">
+                        <h3>Seven Deadly Sins of Gemma</h3>
+                        <span class="when">2026</span>
+                    </div>
+                    <ul>
+                        <li>Replicated <strong>Anthropic's persona / emotion-vector methodology</strong> to extract a steering vector for each of the seven deadly sins in Gemma — on a single consumer GPU.</li>
+                        <li>Verified vector correctness through <strong>targeted steering and activation-patching experiments</strong> rather than eyeballing generations.</li>
+                    </ul>
+                    <div class="tags">
+                        <span>Python</span><span>PyTorch</span><span>Hugging Face</span><span>Gemma</span>
+                    </div>
+                    <div class="refs">
+                        <a href="https://silicognition.is-a.dev/post3.html" target="_blank" rel="noopener noreferrer">↗ writeup</a>
+                    </div>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-top">
+                        <h3>AlponaGen</h3>
+                        <span class="when">oct 2025</span>
+                    </div>
+                    <ul>
+                        <li>Built a modular Python engine that generates <strong>alpona</strong> — Bengali folk art — through fractal-based layering, with an extensible OOP style-registration system.</li>
+                        <li>Published a <strong>13,000-image synthetic dataset</strong> at 1024×1024 on Kaggle for generative-AI research.</li>
+                    </ul>
+                    <div class="tags">
+                        <span>Python</span><span>NumPy</span><span>OOP design</span>
+                    </div>
+                    <div class="refs">
+                        <a href="https://github.com/sortira/alpona-gen" target="_blank" rel="noopener noreferrer">↗ github</a>
+                        <a href="https://www.kaggle.com/datasets/ar1tr0/alpona-gen" target="_blank" rel="noopener noreferrer">↗ dataset</a>
+                    </div>
+                </article>
+
+                <p class="note">Some work with partner orgs is unpublished. More builds on the <a href="other.html">other page</a>.</p>
+            </section>
+
+            <!-- =========================== writing ========================== -->
+            <section aria-labelledby="s-write">
+                <div class="sec-head">
+                    <span class="idx">04</span>
+                    <h2 id="s-write">writing</h2>
+                </div>
+                <div class="writing">
+                    <a class="url" href="https://silicognition.is-a.dev/" target="_blank" rel="noopener noreferrer">silicognition.is-a.dev</a>
+                    <p>Longer writeups on solo projects, and notes from taking things apart.</p>
+                </div>
+            </section>
+
+            <!-- ========================= credentials ======================== -->
+            <section aria-labelledby="s-cred">
+                <div class="sec-head">
+                    <span class="idx">05</span>
+                    <h2 id="s-cred">education, awards &amp; teaching</h2>
+                    <span class="aside"><a class="plain" href="other.html">more →</a></span>
+                </div>
+                <div class="cred">
+                    <div>
+                        <h3>education</h3>
+                        <ul>
+                            <li><b>B.Tech, Information Technology</b> — IIEST Shibpur
+                                <span class="sub">2024 — 2028 · CGPA 9.15 / 10</span>
+                            </li>
+                            <li><b>INSPIRE Scholarship</b> — Government of India
+                                <span class="sub">awarded to the top 1% of the higher-secondary cohort</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>selected awards</h3>
+                        <ul>
+                            <li><b>1st</b> — TensorQuest ML Hackathon, Instruo 2025
+                                <span class="sub">100+ teams across India</span>
+                            </li>
+                            <li><b>1st</b> — Brain Dead ML Hackathon, Revelation 2025
+                                <span class="sub">~200 teams</span>
+                            </li>
+                            <li><b>1st</b> — Prof. Brahma Prakash Memorial Paper Presentation, IGCAR Kalpakkam
+                                <span class="sub">2023 · 500+ applicants · paper on AI/ML in materials research</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>teaching</h3>
+                        <ul>
+                            <li><b>AI/ML Co-Lead</b> — Google Developer Groups on Campus, IIEST Shibpur
+                                <span class="sub">ran sessions on deep learning and transformer architecture; mentored a junior into an internship</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
         </div>
 
+        <!-- ============================ footer ============================ -->
+        <footer>
+            <div class="shell">
+                <div class="foot-grid">
+                    <p class="foot-say">If you're building ML systems, research tooling, or infrastructure that has to hold up in production — I'd like to hear from you. <a href="mailto:aritro.shome.official@gmail.com">Say hello</a>. I'm in Calcutta;
+                        happy to meet for a walk.</p>
+                    <p class="foot-meta">
+                        <a href="https://github.com/sortira" target="_blank" rel="noopener noreferrer">github</a> ·
+                        <a href="https://x.com/silicognition" target="_blank" rel="noopener noreferrer">twitter</a> ·
+                        <a href="resume.pdf">résumé</a><br /> last updated <time datetime="2026-08-02">2 aug 2026</time>
+                    </p>
+                </div>
+            </div>
+        </footer>
     </main>
-
-    <p class="footer"><span class="accent">[+]</span> last updated: june 08, 2026</p>
-
 </body>
 
 </html>

@@ -1,25 +1,28 @@
-# aritro shome — other
+# Aritro Shome — everything else
 
-[← back to main](https://sortira.github.io/index.html.md)
+[← back to main](https://aritro.is-a.dev/index.html.md)
 
-Certifications, hackathon wins, skills, and smaller builds.
+The supporting detail — tooling I actually reach for, smaller things I've built, and coursework. The research lives on the main page.
 
-## Achievements
+## Tooling
 
-- **Role of AI in Material Science Research** — co-authored paper on AI-based statistical techniques for material innovation. 1st place, Brahma Prakash Memorial Material Science Paper Presentation 2023, IGCAR Kalpakkam.
-- **[IPL 2025 predictor](https://github.com/sortira/BrainDead2025)** — random forests, MLPs, Monte Carlo. Won BrainDead 2025, IIEST Shibpur.
-- **[abler](https://github.com/TheSopranos)** — real-time accessibility assistant fusing object detection, depth, speech and gesture. Winner, SXC eXabyte Hackathon ([demo](https://youtu.be/hdMCwxbb7FY)).
-- **MentL** — mental wellness assistant. Best Design, Hacknoware 2025.
-- **PPG encoder & SMS spam classifier frontends** — awarded, Tensor Quest, Instruo 2025.
+- **Interpretability:** activation patching, circuit tracing, steering vectors, logit lens, component attribution
+- **ML:** PyTorch, Hugging Face Transformers, Scikit-Learn, NumPy, Pandas, Matplotlib, LangChain
+- **Infra:** multi-GPU clusters, VRAM-constrained training, CUDA, mixed precision, Docker, Linux, Git
+- **Languages:** Python, Java, C/C++, JavaScript, HTML/CSS, Flask
+- **Concepts:** transformers, LLMs & VLMs, reinforcement learning, linear algebra, probability & statistics, DSA, OOP
+- **Core CS (learning):** distributed systems, database internals, concurrency, algorithms & theory
 
 ## Smaller builds
 
-- **[alponagen](https://github.com/sortira/alpona-gen)** — procedural generator for alpona (Bengali folk art) via fractal layering; [13k-image dataset](https://www.kaggle.com/datasets/ar1tr0/alpona-gen) on Kaggle.
-- **ML & NLP from scratch** — regression, kNN, k-means, MLP, BoW, TF-IDF, CBOW/skipgram, BPE, naive Bayes, LSTM sentiment — pure numpy/pytorch, no black boxes.
-- **[thomas raw](https://github.com/sortira/thomas-raw)** — agentic travel planner (Gemini + LangChain); plans, budgets, identifies locations from photos.
-- **vidvaan** — research paper aggregator across DBLP / ArXiv / OpenLibrary / OpenAlex with Gemini summaries.
-- **where am i?** — web-based geography guessing game.
-- **RNN music generation, engagement prediction, image-filter experiments** — [github](https://github.com/sortira).
+- **ML & NLP from scratch** — linear/logistic/softmax regression, KNN, k-means, MLP, bag-of-words, TF-IDF, CBOW, skip-gram, byte-pair encoding, naïve Bayes and an LSTM sentiment classifier, all in pure NumPy/PyTorch with no black boxes. [github](https://github.com/sortira)
+- **Abler** — real-time multimodal accessibility assistant for the visually impaired: object detection, depth estimation, speech and gesture recognition. Won eXabyte; Best Design at Hacknoware. [github](https://github.com/TheSopranos) · [demo](https://youtu.be/hdMCwxbb7FY)
+- **IPL 2025 predictor** — decision trees, random forests, MLP classifiers and Monte Carlo simulation over a full EDA pipeline, plus a score-based statistical query system. Won Brain Dead 2025. [github](https://github.com/sortira/BrainDead2025)
+- **Vidvaan** — research-paper aggregator unifying DBLP, arXiv, OpenLibrary and OpenAlex, with Gemini summarisation.
+- **Thomas Raw** — agentic travel planner on Gemini + LangChain; plans itineraries, budgets, and identifies locations from photos. [github](https://github.com/sortira/thomas-raw)
+- **MentL** — mental wellness assistant; Best Design Award, Hacknoware 2025.
+- **Where Am I?** — browser-based geography guessing game.
+- **Model frontends** — PPG encoder and SMS spam classifier interfaces built to make the underlying models usable; awarded at Tensor Quest, Instruo 2025.
 
 ## Certifications
 
@@ -31,42 +34,14 @@ Certifications, hackathon wins, skills, and smaller builds.
 - [GenAI with Gemini](https://www.credly.com/badges/fbf606dd-a04b-421e-b88c-a3cfe2f13957/public_url)
 - [Vertex AI Studio](https://www.credly.com/badges/bcb7823a-a404-473d-b831-ae316b98b001/public_url)
 
-## Skills
+## Earlier (pre-university)
 
-- **Languages:** Python, Java, C/C++, JavaScript, HTML/CSS
-- **ML / AI:** PyTorch, scikit-learn, NumPy, pandas, LangChain, NLTK
-- **Tools:** Git, Flask, Matplotlib, Firebase, Google Cloud
+**School**
 
-## Misc & extracurricular
+- All India Rank 6, West Bengal Rank 5 — CISCE Class 10 board examinations, 98.8% aggregate (M. P. Birla Foundation Higher Secondary School, Kolkata)
+- ISC 95.3% / ICSE 98.3% (2010 – 2024)
 
-- 2nd Prize, Metals and Materials Science Quiz, Indian Institute of Metals, Kolkata chapter, 2023
-- 1st Prize, national-level Essay-cum-Elocution contest (Prof Brahm Prakash Memorial Quiz, Indian Institute of Metals, Kalpakkam chapter), 2023 — paper: *"Role of AI and ML in Material Science Research"*
-- AIR 6 & WBR 5, class 10 CISCE board examinations (98.8% aggregate)
-- 1st, Tensor Quest (ML Hackathon) @ Instruo 13, IIEST Shibpur — Team Neural Nexus
-- Best Design Award, Hacknoware (Web Dev Hackathon) @ Instruo 13, IIEST Shibpur — Team MikeHawk, mental health app MentL
-- Global Rank 12, International Mathematical Championship, 2022
-- 4th, SAEVUS Eco-Achievers Nature Quiz, 2016 & 2017
-- 1st, Meritnation All India Mathematics Competition 2018-2019
-- 1st, Quizzinius (interschool pop quiz), Delhi Public School Ruby Park, Kolkata, 2021-2022
-- 2nd, Udaan and Vrikshya Quiz, South Point High School, 2022
-- 3rd, Qwiz-21, South City International School, 2021
-- 2nd, Quiz-21 Overall, South City International School, 2021
-- 3rd, Quotient Juniors, MP Birla Foundation Higher Secondary School, 2021
-- 1st, Codejam (intraschool), 2019 & 2022
-- 1st, Pitch the IT Product (intraschool), 2022
-- 2nd, CounterStrike 1.6 (intraschool, esports), 2022
-- 1st, Quiz (intraschool) 2018, 2021, 2022; 3rd in 2017, 2019, 2020
-- 3rd, Shot Put (intraschool), 2017 & 2019
-- 2nd, IT Quiz (intraschool), 2019
-- 1st, Coding Competition — Lakshmipat Singhania Academy (2022), Don Bosco Park Circus (2023); 3rd, St. Xaviers Collegiate School (2021)
-- 2nd, intraschool basketball, 2019 & 2015
-- 1st, IQ-based science event (XFactor) at Relativity, La Martiniere Boys School, 2019; 2nd at the same fest for quiz
-- 3rd, interschool quiz at Ullas, South Point High School, 2015 & 2016
-- 2nd & 3rd, School Quiz Friends FM, 2019 & 2018
-- Multiple podium finishes, Wiz National Spell Bee competitions & SOF Olympiads
-- Multiple academic certificates in various subjects
-- 1st & 3rd, intraschool debate, 2022 & 2023 (best speaker both times)
-- 2nd, Disputation (freshers debate competition), DebSoc, IIEST Shibpur
-- 1st, intraschool hammered (competitive speaking), 2023
-- 1st, interschool hammered, 2023
-- Consecutive podium finishes, aquatic meet (swimming) by Chetla Agrani Club, 2012-2019
+**Competitions**
+
+- Global Rank 12 — International Mathematical Championship, 2022
+- 1st — national Essay-cum-Elocution contest, Indian Institute of Metals, 2023 (paper on the role of AI/ML in materials science)

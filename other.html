@@ -1,309 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>aritro shome — other</title>
-    <meta name="description" content="aritro shome — certifications, hackathon wins, skills and smaller builds." />
+    <title>Aritro Shome — skills, builds &amp; certifications</title>
+    <meta name="description" content="Aritro Shome — technical skills, smaller builds, certifications and earlier academic results." />
     <meta name="author" content="Aritro Shome" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="canonical" href="https://aritro.is-a.dev/other.html" />
+    <meta name="theme-color" content="#0b0b0d" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#fcfbf9" media="(prefers-color-scheme: light)" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Aritro Shome" />
+    <meta property="og:title" content="Aritro Shome — skills, builds &amp; certifications" />
+    <meta property="og:description" content="Technical skills, smaller builds, certifications and earlier academic results." />
+    <meta property="og:url" content="https://aritro.is-a.dev/other.html" />
+    <meta property="og:image" content="https://aritro.is-a.dev/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@silicognition" />
+    <meta name="twitter:image" content="https://aritro.is-a.dev/og.png" />
+
+    <link rel="icon" href="icon-32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="icon-512.png" sizes="512x512" type="image/png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300..600&family=Inter:wght@400..600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="site.css" />
 
-    <style>
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        html {
-            background-color: #fafaf7;
-            min-height: 100%;
-        }
-        
-        body {
-            font-family: 'Source Serif 4', 'Source Serif Pro', Georgia, 'Times New Roman', Times, serif;
-            font-size: 15px;
-            line-height: 1.6;
-            color: #1a1a1a;
-            max-width: none;
-            margin: 0;
-            padding: 32px 64px 28px;
-            background: transparent;
-        }
-        
-        a {
-            color: #2c5282;
-            text-decoration: underline;
-            text-decoration-thickness: 1px;
-            text-underline-offset: 2.5px;
-        }
-        
-        a:hover {
-            color: #3a7ca5;
-        }
-        
-        h1 {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            font-size: 19px;
-            font-weight: 700;
-            letter-spacing: -0.01em;
-        }
-        
-        h2 {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            font-size: 11.5px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: #2c5282;
-            margin-bottom: 14px;
-            padding-bottom: 4px;
-            border-bottom: 1px solid rgba(44, 82, 130, 0.18);
-        }
-        
-        p {
-            margin-bottom: 14px;
-        }
-        
-        em {
-            font-style: italic;
-        }
-        
-        ol,
-        ul {
-            padding-left: 22px;
-            margin-bottom: 14px;
-        }
-        
-        li {
-            margin-bottom: 4px;
-        }
-        
-        header {
-            margin-bottom: 40px;
-        }
-        
-        header>*+* {
-            margin-top: 12px;
-        }
-        
-        header h1 {
-            margin-bottom: 0;
-        }
-        
-        .back {
-            font-size: 14px;
-            margin-top: 6px !important;
-        }
-        
-        .hl {
-            color: #2c5282;
-            font-weight: 700;
-        }
-        
-        section {
-            margin-bottom: 40px;
-        }
-        
-        .grid-2 {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        
-        section .col h2 {
-            margin-bottom: 14px;
-        }
-        
-        section .col ol {
-            padding-left: 18px;
-        }
-        
-        section .col li {
-            margin-bottom: 8px;
-        }
-        
-        .certs ol {
-            column-count: 2;
-            column-gap: 40px;
-            padding-left: 18px;
-        }
-        
-        .certs li {
-            margin-bottom: 6px;
-            break-inside: avoid;
-        }
-        
-        .skills p {
-            margin-bottom: 8px;
-        }
-        
-        .skills .label {
-            font-weight: 700;
-        }
-        
-        .misc ul {
-            list-style: none;
-            padding-left: 0;
-            column-count: 3;
-            column-gap: 40px;
-        }
-        
-        .misc li {
-            margin-bottom: 7px;
-            break-inside: avoid;
-            padding-left: 0;
-            font-size: 13px;
-            line-height: 1.5;
-        }
-        
-        .footer {
-            text-align: center;
-            font-size: 13px;
-            color: #6b7280;
-            margin-top: 32px;
-        }
-        
-        .footer .accent {
-            color: #2c5282;
-        }
-        
-        @media (max-width: 1280px) {
-            .misc ul {
-                column-count: 2;
-            }
-        }
-        
-        @media (max-width: 1100px) {
-            body {
-                padding: 32px 32px 32px;
-            }
-        }
-        
-        @media (max-width: 760px) {
-            body {
-                padding: 28px 22px 28px;
-                font-size: 13.5px;
-            }
-            .grid-2 {
-                grid-template-columns: 1fr;
-                gap: 28px;
-            }
-            .certs ol {
-                column-count: 1;
-            }
-            .misc ul {
-                column-count: 1;
-            }
-        }
-    </style>
+    <script>
+        (function () {
+            var s = null;
+            try { s = localStorage.getItem('theme'); } catch (e) {}
+            document.documentElement.setAttribute('data-theme',
+                s || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'));
+        })();
+    </script>
+    <script src="site.js" defer></script>
     <script data-goatcounter="https://portfolio1.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 
 <body>
+    <a class="skip" href="#main">skip to content</a>
 
-    <header>
-        <h1>aritro shome — other</h1>
-        <p class="back"><a href="index.html">← back to main</a></p>
-        <p>you cannot be possibly that interested in me.</p>
-    </header>
-
-    <section class="grid-2">
-        <div class="col">
-            <h2>achievements</h2>
-            <ol>
-                <li><strong>role of ai in material science research</strong> — co-authored paper on AI-based statistical techniques for material innovation. <span class="hl">1st place</span>, Brahma Prakash Memorial Material Science Paper Presentation 2023,
-                    <span class="hl">IGCAR Kalpakkam</span></li>
-                <li><a href="https://github.com/sortira/BrainDead2025" target="_blank" rel="noopener noreferrer">ipl 2025 predictor</a> — random forests, mlps, monte carlo. <span class="hl">won BrainDead 2025</span>, IIEST Shibpur</li>
-                <li><a href="https://github.com/TheSopranos" target="_blank" rel="noopener noreferrer">abler</a> — real-time accessibility assistant fusing object detection, depth, speech and gesture. <span class="hl">winner, SXC eXabyte Hackathon</span>                    (<a href="https://youtu.be/hdMCwxbb7FY" target="_blank" rel="noopener noreferrer">demo</a>)</li>
-                <li><strong>MentL</strong> — mental wellness assistant. <span class="hl">best design</span>, Hacknoware 2025</li>
-                <li>PPG encoder &amp; SMS spam classifier frontends — <span class="hl">awarded</span>, Tensor Quest, Instruo 2025</li>
-            </ol>
+    <div class="shell">
+        <div class="topbar">
+            <a class="wordmark" href="index.html" aria-label="Back to home">
+                <img src="icon-32.png" alt="" width="22" height="22" />
+                <span>← aritro shome</span>
+            </a>
+            <button class="theme-btn" id="theme-btn" type="button" aria-label="Switch colour theme">
+                <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.4M12 19.2v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.4 12h2.4M19.2 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
+                <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.4A8.6 8.6 0 1 1 9.6 3.5a6.9 6.9 0 0 0 10.9 10.9Z"/></svg>
+                <span id="theme-label">dark</span>
+            </button>
         </div>
-        <div class="col">
-            <h2>smaller builds</h2>
-            <ol>
-                <li><a href="https://github.com/sortira/alpona-gen" target="_blank" rel="noopener noreferrer">alponagen</a> — procedural generator for alpona (bengali folk art) via fractal layering; <a href="https://www.kaggle.com/datasets/ar1tr0/alpona-gen"
-                        target="_blank" rel="noopener noreferrer">13k-image dataset</a> on kaggle</li>
-                <li><strong>ml &amp; nlp from scratch</strong> — regression, knn, k-means, mlp, bow, tf-idf, cbow/skipgram, bpe, naive bayes, lstm sentiment — pure numpy/pytorch, no black boxes</li>
-                <li><a href="https://github.com/sortira/thomas-raw" target="_blank" rel="noopener noreferrer">thomas raw</a> — agentic travel planner (gemini + langchain); plans, budgets, identifies locations from photos</li>
-                <li><strong>vidvaan</strong> — research paper aggregator across DBLP / ArXiv / OpenLibrary / OpenAlex with gemini summaries</li>
-                <li><strong>where am i?</strong> — web-based geography guessing game</li>
-                <li>RNN music generation, engagement prediction, image-filter experiments — <a href="https://github.com/sortira" target="_blank" rel="noopener noreferrer">github</a></li>
-            </ol>
+    </div>
+
+    <main id="main">
+        <div class="shell">
+
+            <header class="hero">
+                <p class="eyebrow">appendix</p>
+                <h1>Everything else</h1>
+                <p class="page-intro">The supporting detail — tooling I actually reach for, smaller things I've built, and coursework. The research lives on the <a href="index.html">main page</a>.</p>
+            </header>
+
+            <!-- ============================ skills =========================== -->
+            <section aria-labelledby="s-skills">
+                <div class="sec-head">
+                    <span class="idx">01</span>
+                    <h2 id="s-skills">tooling</h2>
+                </div>
+                <div class="taggroup">
+                    <div class="row">
+                        <h3>interpretability</h3>
+                        <div class="tags">
+                            <span>activation patching</span><span>circuit tracing</span><span>steering vectors</span><span>logit lens</span><span>component attribution</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3>ml</h3>
+                        <div class="tags">
+                            <span>PyTorch</span><span>Hugging Face Transformers</span><span>Scikit-Learn</span><span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>LangChain</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3>infra</h3>
+                        <div class="tags">
+                            <span>multi-GPU clusters</span><span>VRAM-constrained training</span><span>CUDA</span><span>mixed precision</span><span>Docker</span><span>Linux</span><span>Git</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3>languages</h3>
+                        <div class="tags">
+                            <span>Python</span><span>Java</span><span>C/C++</span><span>JavaScript</span><span>HTML/CSS</span><span>Flask</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3>concepts</h3>
+                        <div class="tags">
+                            <span>transformers</span><span>LLMs &amp; VLMs</span><span>reinforcement learning</span><span>linear algebra</span><span>probability &amp; statistics</span><span>DSA</span><span>OOP</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3>core cs <span class="wip">(learning)</span></h3>
+                        <div class="tags">
+                            <span>distributed systems</span><span>database internals</span><span>concurrency</span><span>algorithms &amp; theory</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================ builds =========================== -->
+            <section aria-labelledby="s-builds">
+                <div class="sec-head">
+                    <span class="idx">02</span>
+                    <h2 id="s-builds">smaller builds</h2>
+                </div>
+                <ul class="builds">
+                    <li><b>ML &amp; NLP from scratch</b> — linear/logistic/softmax regression, KNN, k-means, MLP, bag-of-words, TF-IDF, CBOW, skip-gram, byte-pair encoding, naïve Bayes and an LSTM sentiment classifier, all in pure NumPy/PyTorch with no
+                        black boxes. <a href="https://github.com/sortira" target="_blank" rel="noopener noreferrer">github ↗</a></li>
+                    <li><b>Abler</b> — real-time multimodal accessibility assistant for the visually impaired: object detection, depth estimation, speech and gesture recognition. Won eXabyte; Best Design at Hacknoware. <a href="https://github.com/TheSopranos" target="_blank" rel="noopener noreferrer">github ↗</a>
+                        <a href="https://youtu.be/hdMCwxbb7FY" target="_blank" rel="noopener noreferrer">demo ↗</a></li>
+                    <li><b>IPL 2025 predictor</b> — decision trees, random forests, MLP classifiers and Monte Carlo simulation over a full EDA pipeline, plus a score-based statistical query system. Won Brain Dead 2025. <a href="https://github.com/sortira/BrainDead2025" target="_blank" rel="noopener noreferrer">github ↗</a></li>
+                    <li><b>Vidvaan</b> — research-paper aggregator unifying DBLP, arXiv, OpenLibrary and OpenAlex, with Gemini summarisation.</li>
+                    <li><b>Thomas Raw</b> — agentic travel planner on Gemini + LangChain; plans itineraries, budgets, and identifies locations from photos. <a href="https://github.com/sortira/thomas-raw" target="_blank" rel="noopener noreferrer">github ↗</a></li>
+                    <li><b>MentL</b> — mental wellness assistant; Best Design Award, Hacknoware 2025.</li>
+                    <li><b>Where Am I?</b> — browser-based geography guessing game.</li>
+                    <li><b>Model frontends</b> — PPG encoder and SMS spam classifier interfaces built to make the underlying models usable; awarded at Tensor Quest, Instruo 2025.</li>
+                </ul>
+            </section>
+
+            <!-- ======================== certifications ======================= -->
+            <section aria-labelledby="s-certs">
+                <div class="sec-head">
+                    <span class="idx">03</span>
+                    <h2 id="s-certs">certifications</h2>
+                    <span class="aside">deeplearning.ai · google cloud</span>
+                </div>
+                <div class="tags">
+                    <a href="https://coursera.org/share/a3e148a3403eb27d4e6dd0bb2bd6827a" target="_blank" rel="noopener noreferrer">Deep Learning Specialization</a>
+                    <a href="https://coursera.org/share/98f350fe855684f2b6569547d064ec36" target="_blank" rel="noopener noreferrer">Convolutional Neural Networks</a>
+                    <a href="https://coursera.org/share/bb8533789cc61159dd1b879f3b39e8ff" target="_blank" rel="noopener noreferrer">Sequence Models</a>
+                    <a href="https://coursera.org/share/82692be00bb1de9220627bc1e82c6fe9" target="_blank" rel="noopener noreferrer">Structuring ML Projects</a>
+                    <a href="https://coursera.org/share/ccf3d344aebd01c5f3355351b0bddfa8" target="_blank" rel="noopener noreferrer">Improving Deep Neural Networks</a>
+                    <a href="https://www.credly.com/badges/fbf606dd-a04b-421e-b88c-a3cfe2f13957/public_url" target="_blank" rel="noopener noreferrer">GenAI with Gemini</a>
+                    <a href="https://www.credly.com/badges/bcb7823a-a404-473d-b831-ae316b98b001/public_url" target="_blank" rel="noopener noreferrer">Vertex AI Studio</a>
+                </div>
+            </section>
+
+            <!-- =========================== earlier ========================== -->
+            <section aria-labelledby="s-earlier">
+                <div class="sec-head">
+                    <span class="idx">04</span>
+                    <h2 id="s-earlier">earlier</h2>
+                    <span class="aside">pre-university</span>
+                </div>
+                <div class="cred">
+                    <div>
+                        <h3>school</h3>
+                        <ul>
+                            <li><b>All India Rank 6</b>, West Bengal Rank 5 — CISCE Class 10 board examinations
+                                <span class="sub">98.8% aggregate · M. P. Birla Foundation HS School, Kolkata</span>
+                            </li>
+                            <li><b>ISC 95.3%</b> / <b>ICSE 98.3%</b>
+                                <span class="sub">2010 — 2024</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>competitions</h3>
+                        <ul>
+                            <li><b>Global Rank 12</b> — International Mathematical Championship
+                                <span class="sub">2022</span>
+                            </li>
+                            <li><b>1st</b> — national Essay-cum-Elocution contest, Indian Institute of Metals
+                                <span class="sub">2023 · paper on the role of AI/ML in materials science</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
         </div>
-    </section>
 
-    <section class="certs">
-        <h2>certifications</h2>
-        <ol>
-            <li><a href="https://coursera.org/share/a3e148a3403eb27d4e6dd0bb2bd6827a" target="_blank" rel="noopener noreferrer">deep learning specialization</a></li>
-            <li><a href="https://coursera.org/share/98f350fe855684f2b6569547d064ec36" target="_blank" rel="noopener noreferrer">convolutional neural networks</a></li>
-            <li><a href="https://coursera.org/share/bb8533789cc61159dd1b879f3b39e8ff" target="_blank" rel="noopener noreferrer">sequence models</a></li>
-            <li><a href="https://coursera.org/share/82692be00bb1de9220627bc1e82c6fe9" target="_blank" rel="noopener noreferrer">structuring ml projects</a></li>
-            <li><a href="https://coursera.org/share/ccf3d344aebd01c5f3355351b0bddfa8" target="_blank" rel="noopener noreferrer">improving deep neural networks</a></li>
-            <li><a href="https://www.credly.com/badges/fbf606dd-a04b-421e-b88c-a3cfe2f13957/public_url" target="_blank" rel="noopener noreferrer">genai with gemini</a></li>
-            <li><a href="https://www.credly.com/badges/bcb7823a-a404-473d-b831-ae316b98b001/public_url" target="_blank" rel="noopener noreferrer">vertex ai studio</a></li>
-        </ol>
-    </section>
-
-    <section class="skills">
-        <h2>skills</h2>
-        <p><span class="label">languages</span>: python, java, c/c++, javascript, html/css</p>
-        <p><span class="label">ml / ai</span>: pytorch, scikit-learn, numpy, pandas, langchain, nltk</p>
-        <p><span class="label">tools</span>: git, flask, matplotlib, firebase, google cloud</p>
-    </section>
-
-    <section class="misc">
-        <h2>misc &amp; extra curricular</h2>
-        <ul>
-            <li>🥈 2nd Prize, Metals and Materials Science Quiz, Indian Institute of Metals, Kolkata chapter, 2023</li>
-            <li>🥇 1st prize, national-level Essay-cum-Elocution contest (Prof Brahm Prakash Memorial Quiz, Indian Institute of Metals, Kalpakkam chapter), 2023 — paper: <em>"Role of AI and ML in Material Science Research"</em></li>
-            <li>🏅 <span class="hl">AIR 6</span> &amp; <span class="hl">WBR 5</span>, class 10 CISCE board examinations (<span class="hl">98.8% aggregate</span>)</li>
-            <li>🥇 1st, Tensor Quest (ML Hackathon) @ Instruo 13, IIEST Shibpur — Team Neural Nexus</li>
-            <li>🥇 Best Design Award, Hacknoware (Web Dev Hackathon) @ Instruo 13, IIEST Shibpur — Team MikeHawk, mental health app MentL</li>
-            <li>🌐 <span class="hl">Global Rank 12</span>, International Mathematical Championship, 2022</li>
-            <li>🌳 4th, SAEVUS Eco-Achievers Nature Quiz, 2016 &amp; 2017</li>
-            <li>🥇 1st, Meritnation All India Mathematics Competition 2018-2019</li>
-            <li>🥇 1st, Quizzinius (interschool pop quiz), Delhi Public School Ruby Park, Kolkata, 2021-2022</li>
-            <li>🥈 2nd, Udaan and Vrikshya Quiz, South Point High School, 2022</li>
-            <li>🥉 3rd, Qwiz-21, South City International School, 2021</li>
-            <li>🥈 2nd, Quiz-21 Overall, South City International School, 2021</li>
-            <li>🥉 3rd, Quotient Juniors, MP Birla Foundation Higher Secondary School, 2021</li>
-            <li>🥇 1st, Codejam (intraschool), 2019 &amp; 2022</li>
-            <li>🥇 1st, Pitch the IT Product (intraschool), 2022</li>
-            <li>🥈 2nd, CounterStrike 1.6 (intraschool, esports), 2022</li>
-            <li>🥇 1st, Quiz (intraschool) 2018, 2021, 2022; 🥉 3rd in 2017, 2019, 2020</li>
-            <li>🥉 3rd, Shot Put (intraschool), 2017 &amp; 2019</li>
-            <li>🥈 2nd, IT Quiz (intraschool), 2019</li>
-            <li>🥇 1st, Coding Competition — Lakshmipat Singhania Academy (2022), Don Bosco Park Circus (2023); 🥉 3rd, St. Xaviers Collegiate School (2021)</li>
-            <li>🥈 2nd, intraschool basketball, 2019 &amp; 2015</li>
-            <li>🥇 1st, IQ-based science event (XFactor) at Relativity, La Martiniere Boys School, 2019; 🥈 2nd at the same fest for quiz</li>
-            <li>🥉 3rd, interschool quiz at Ullas, South Point High School, 2015 &amp; 2016</li>
-            <li>🥈 2nd &amp; 🥉 3rd, School Quiz Friends FM, 2019 &amp; 2018</li>
-            <li>🏅 Multiple podium finishes, Wiz National Spell Bee competitions &amp; SOF Olympiads</li>
-            <li>📜 Multiple academic certificates in various subjects</li>
-            <li>🥇 1st &amp; 🥉 3rd, intraschool debate, 2022 &amp; 2023 (best speaker both times)</li>
-            <li>🥈 2nd, Disputation (freshers debate competition), DebSoc, IIEST Shibpur</li>
-            <li>🥇 1st, intraschool hammered (competitive speaking), 2023</li>
-            <li>🥇 1st, interschool hammered, 2023</li>
-            <li>🏊 Consecutive podium finishes, aquatic meet (swimming) by Chetla Agrani Club, 2012-2019</li>
-        </ul>
-    </section>
-
-    <p class="footer"><span class="accent">[+]</span> last updated: june 08, 2026</p>
-
+        <footer>
+            <div class="shell">
+                <div class="foot-grid">
+                    <p class="foot-say"><a href="index.html">← back to the research</a></p>
+                    <p class="foot-meta">
+                        <a href="https://github.com/sortira" target="_blank" rel="noopener noreferrer">github</a> ·
+                        <a href="https://x.com/silicognition" target="_blank" rel="noopener noreferrer">twitter</a> ·
+                        <a href="resume.pdf">résumé</a><br /> last updated <time datetime="2026-08-02">2 aug 2026</time>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </main>
 </body>
 
 </html>
