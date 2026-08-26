@@ -1,6 +1,6 @@
 # Aritro Shome (sortira)
 
-> Personal site of Aritro Shome (a.k.a. sortira), a student engineer working across machine-learning research, ML engineering and systems. Research intern at AI4Bharat, IIT Madras, doing mechanistic interpretability and circuit tracing on multilingual vision-language models over Indic inputs; previously an AI engineer intern at Sarvam AI, building evaluation frameworks and production data pipelines. Also interested in core CS — distributed systems, database internals, concurrency and algorithms.
+> Personal site of Aritro Shome (a.k.a. sortira), a student engineer working across machine-learning research, ML engineering and systems. Research intern at AI4Bharat, IIT Madras, doing mechanistic interpretability and circuit tracing on multilingual vision-language models over Indic inputs; previously an AI engineer intern at Sarvam AI, building evaluation frameworks and production data pipelines. Also interested in core CS: distributed systems, database internals, concurrency and algorithms.
 
 Canonical host: https://aritro.is-a.dev/ (https://sortira.github.io/ redirects here). Clean markdown mirrors of each page are linked below.
 
@@ -12,7 +12,7 @@ Canonical host: https://aritro.is-a.dev/ (https://sortira.github.io/ redirects h
 
 ## Writing
 
-- [silicognition](https://silicognition.is-a.dev/): Technical blog — writeups on solo interpretability projects.
+- [silicognition](https://silicognition.is-a.dev/): Technical blog with writeups on solo interpretability projects.
 
 ## Profiles
 
@@ -22,7 +22,7 @@ Canonical host: https://aritro.is-a.dev/ (https://sortira.github.io/ redirects h
 
 ## Optional
 
-- [ForgeFormer — writeup](https://silicognition.is-a.dev/post2.html): Hand-designed interpretable 2-layer transformer that performs two-digit addition with manually-set weights and no gradient descent.
-- [ForgeFormer — demo](https://aritro.is-a.dev/forgeformer/): Interactive demo.
-- [Seven Deadly Sins of Gemma — writeup](https://silicognition.is-a.dev/post3.html): Replication of Anthropic's persona/emotion-vector methodology to extract steering vectors in Gemma on a consumer GPU, verified by targeted steering and activation patching.
-- [AlponaGen — dataset](https://www.kaggle.com/datasets/ar1tr0/alpona-gen): 13,000-image 1024x1024 synthetic dataset of Bengali folk art.
+- [ForgeFormer writeup](https://silicognition.is-a.dev/post2.html): Hand-designed interpretable 2-layer transformer that performs two-digit addition with manually-set weights and no gradient descent.
+- [ForgeFormer demo](https://aritro.is-a.dev/forgeformer/): Interactive demo.
+- [Seven Deadly Sins of Gemma writeup](https://silicognition.is-a.dev/post3.html): Replication of Anthropic's persona/emotion-vector methodology to extract steering vectors in Gemma on a consumer GPU, verified by targeted steering and activation patching.
+- [AlponaGen dataset](https://www.kaggle.com/datasets/ar1tr0/alpona-gen): 13,000-image 1024x1024 synthetic dataset of Bengali folk art.

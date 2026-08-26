@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>aritro.</title>
-    <meta name="description" content="Aritro Shome (sortira) — research intern at AI4Bharat, IIT Madras; previously AI engineer intern at Sarvam AI. Works across ML research, machine-learning engineering and systems: interpretability, evaluation frameworks, and production data pipelines." />
+    <meta name="description" content="Aritro Shome (sortira), research intern at AI4Bharat, IIT Madras; previously AI engineer intern at Sarvam AI. Works across ML research, machine-learning engineering and systems." />
     <meta name="author" content="Aritro Shome" />
     <link rel="canonical" href="https://aritro.is-a.dev/" />
-    <meta name="theme-color" content="#0b0b0d" media="(prefers-color-scheme: dark)" />
-    <meta name="theme-color" content="#fcfbf9" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#16181a" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="profile" />
     <meta property="og:site_name" content="Aritro Shome" />
-    <meta property="og:title" content="Aritro Shome — machine learning, systems &amp; research engineering" />
+    <meta property="og:title" content="Aritro Shome, machine learning, systems &amp; research engineering" />
     <meta property="og:description" content="Research intern at AI4Bharat, IIT Madras. Previously Sarvam AI. ML research, ML engineering and systems." />
     <meta property="og:url" content="https://aritro.is-a.dev/" />
     <meta property="og:image" content="https://aritro.is-a.dev/og.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Aritro Shome — machine learning, systems and research engineering." />
+    <meta property="og:image:alt" content="Aritro Shome, machine learning, systems and research engineering." />
     <meta property="profile:first_name" content="Aritro" />
     <meta property="profile:last_name" content="Shome" />
     <meta property="profile:username" content="sortira" />
@@ -29,7 +29,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@silicognition" />
     <meta name="twitter:creator" content="@silicognition" />
-    <meta name="twitter:title" content="Aritro Shome — machine learning, systems &amp; research engineering" />
+    <meta name="twitter:title" content="Aritro Shome, machine learning, systems &amp; research engineering" />
     <meta name="twitter:description" content="Research intern at AI4Bharat, IIT Madras. Previously Sarvam AI. ML research, ML engineering and systems." />
     <meta name="twitter:image" content="https://aritro.is-a.dev/og.png" />
 
@@ -37,9 +37,6 @@
     <link rel="icon" href="icon-512.png" sizes="512x512" type="image/png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300..600&family=Inter:wght@400..600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="site.css" />
 
     <script>
@@ -48,7 +45,7 @@
             var s = null;
             try { s = localStorage.getItem('theme'); } catch (e) {}
             document.documentElement.setAttribute('data-theme',
-                s || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'));
+                s || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
         })();
     </script>
     <script src="site.js" defer></script>
@@ -64,7 +61,7 @@
             "image": "https://aritro.is-a.dev/portrait.jpg",
             "email": "aritro.shome.official@gmail.com",
             "jobTitle": "Research Intern",
-            "description": "Student engineer working across machine-learning research, ML engineering and systems — interpretability, evaluation frameworks and production data pipelines.",
+            "description": "Student engineer working across machine-learning research, ML engineering and systems.",
             "sameAs": ["https://github.com/sortira", "https://www.linkedin.com/in/aritroshome/", "https://x.com/silicognition", "https://silicognition.is-a.dev/"],
             "worksFor": { "@type": "Organization", "name": "AI4Bharat, IIT Madras", "url": "https://ai4bharat.iitm.ac.in/" },
             "alumniOf": { "@type": "CollegeOrUniversity", "name": "Indian Institute of Engineering Science and Technology, Shibpur" },
@@ -76,65 +73,57 @@
 <body>
     <a class="skip" href="#main">skip to content</a>
 
-    <div class="shell">
-        <div class="topbar">
-            <a class="wordmark" href="/" aria-label="Aritro Shome — home">
-                <img src="icon-32.png" alt="" width="22" height="22" />
-                <span>aritro shome</span>
-            </a>
-            <button class="theme-btn" id="theme-btn" type="button" aria-label="Switch colour theme">
-                <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.4M12 19.2v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.4 12h2.4M19.2 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
-                <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.4A8.6 8.6 0 1 1 9.6 3.5a6.9 6.9 0 0 0 10.9 10.9Z"/></svg>
-                <span id="theme-label">dark</span>
-            </button>
-        </div>
-    </div>
+    <div class="layout">
 
-    <main id="main">
-        <div class="shell">
+        <!-- ============================= rail ============================= -->
+        <aside class="rail profile">
+            <img class="avatar" src="portrait.jpg" width="226" height="226" alt="Aritro Shome" />
+            <h1>Aritro Shome</h1>
+            <p class="handle">sortira</p>
 
-            <!-- ============================ hero ============================ -->
+            <nav class="links" aria-label="Profiles and documents">
+                <a href="resume.pdf">Résumé</a>
+                <a href="https://silicognition.is-a.dev/" target="_blank" rel="noopener noreferrer">Blog</a>
+                <a href="https://github.com/sortira" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/aritroshome/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://x.com/silicognition" target="_blank" rel="noopener noreferrer">Twitter</a>
+                <a href="mailto:aritro.shome.official@gmail.com">Email</a>
+            </nav>
+
+            <div class="sidenote">
+                <h2>Reading up on</h2>
+                <ul>
+                    <li>distributed systems</li>
+                    <li>database internals</li>
+                    <li>concurrency</li>
+                    <li>algorithms &amp; theory</li>
+                </ul>
+                <p>early days, mostly reading and small experiments.</p>
+            </div>
+
+            <p class="rail-theme">
+                <button class="theme-btn" id="theme-btn" type="button" aria-label="Switch colour theme"><span id="theme-label">dark mode</span></button>
+            </p>
+        </aside>
+
+        <main id="main" class="flow">
+
+            <!-- ============================ intro ============================ -->
             <header class="hero">
-                <div class="hero-grid">
-                    <div>
-                        <p class="eyebrow">ml · systems · research</p>
-                        <h1>Aritro Shome</h1>
-                        <p class="handle">sortira</p>
+                <p>Hi, I am Aritro Shome. I study information technology at IIEST Shibpur, and go by <i>sortira</i> on most of the internet.</p>
 
-                        <p class="lede">I like taking systems apart to see how they actually work — which circuits a multilingual vision-language model really uses, or why a production pipeline falls over under load. Research and engineering feel like
-                            <em>the same instinct</em> pointed at different layers.</p>
+                <p>I work across machine learning research and engineering. Right now I am a research intern at AI4Bharat, IIT Madras; before that I spent a few months at Sarvam AI building evaluation tooling and production pipelines. What I enjoy
+                    is taking systems apart to see how they actually work, whether that is a model or the infrastructure it runs on.</p>
 
-                        <nav class="linkrow" aria-label="Profiles and documents">
-                            <a class="primary" href="resume.pdf">résumé ↓</a>
-                            <a href="https://silicognition.is-a.dev/" target="_blank" rel="noopener noreferrer">blog</a>
-                            <a href="https://github.com/sortira" target="_blank" rel="noopener noreferrer">github</a>
-                            <a href="https://www.linkedin.com/in/aritroshome/" target="_blank" rel="noopener noreferrer">linkedin</a>
-                            <a href="https://x.com/silicognition" target="_blank" rel="noopener noreferrer">twitter</a>
-                            <a href="mailto:aritro.shome.official@gmail.com">email</a>
-                        </nav>
-                    </div>
-
-                    <div class="figure-stack">
-                        <img class="portrait" src="portrait.jpg" width="226" height="226" alt="Aritro Shome" />
-                        <aside class="sidenote">
-                            <h2>currently digging into</h2>
-                            <ul>
-                                <li>distributed systems</li>
-                                <li>database internals</li>
-                                <li>concurrency</li>
-                                <li>algorithms &amp; theory</li>
-                            </ul>
-                            <p>early days — mostly reading and small experiments.</p>
-                        </aside>
-                    </div>
-                </div>
+                <p>Outside of work I am reading my way into core systems, mostly distributed systems, database internals and concurrency. If any of this sounds interesting, or you would rather talk about something else entirely, send me an
+                    <a href="mailto:aritro.shome.official@gmail.com">email</a>.</p>
             </header>
 
-            <!-- ============================ now ============================= -->
+            <!-- ============================= now ============================= -->
             <section aria-labelledby="s-now">
                 <div class="sec-head">
                     <span class="idx">01</span>
-                    <h2 id="s-now">now</h2>
+                    <h2 id="s-now">Now</h2>
                 </div>
                 <ul class="now">
                     <li>
@@ -147,7 +136,7 @@
                     </li>
                     <li>
                         <time datetime="2026">2026</time>
-                        <p>wrote up <b>ForgeFormer</b> and <b>Seven Deadly Sins of Gemma</b> — two solo interpretability projects.</p>
+                        <p>wrote up <b>ForgeFormer</b> and <b>Seven Deadly Sins of Gemma</b>, two solo interpretability projects.</p>
                     </li>
                     <li>
                         <time datetime="2025-12">dec 2025</time>
@@ -156,26 +145,26 @@
                 </ul>
             </section>
 
-            <!-- ======================= research & eng ======================= -->
+            <!-- ========================== experience ========================= -->
             <section aria-labelledby="s-res">
                 <div class="sec-head">
                     <span class="idx">02</span>
-                    <h2 id="s-res">experience</h2>
+                    <h2 id="s-res">Experience</h2>
                 </div>
 
                 <article class="entry">
                     <div class="entry-top">
                         <h3>Research Intern</h3>
-                        <span class="when">mar 2026 — present</span>
+                        <span class="when">mar 2026 to present</span>
                     </div>
                     <p class="entry-org"><a href="https://ai4bharat.iitm.ac.in/" target="_blank" rel="noopener noreferrer">AI4Bharat</a>, IIT Madras</p>
                     <ul>
-                        <li>Investigating <strong>mechanistic interpretability and circuit tracing</strong> of SoTA open models (Gemma, Qwen) on reasoning tasks posed across modalities, languages and model scales — focused on vision-language models over
-                            Indic inputs.</li>
+                        <li>Investigating <strong>mechanistic interpretability and circuit tracing</strong> of SoTA open models (Gemma, Qwen) on reasoning tasks posed across modalities, languages and model scales, with a focus on vision-language
+                            models over Indic inputs.</li>
                         <li>Ran <strong>40,000+ instrumented forward passes</strong> for activation capture on multi-billion-parameter models under a hard 24 GB VRAM ceiling, and built pre-experiment component-attribution scripts to isolate critical
                             circuits before committing to full runs.</li>
-                        <li>Engineered a <strong>memory-efficient activation-patching framework</strong>: disabled fused and attention-kernel optimisations to expose per-layer activations, then managed the resulting non-linear VRAM growth to keep large
-                            models inside budget.</li>
+                        <li>Engineered a <strong>memory-efficient activation-patching framework</strong>: disabled fused and attention-kernel optimisations to expose per-layer activations, then managed the resulting non-linear VRAM growth to keep
+                            large models inside budget.</li>
                     </ul>
                     <div class="tags">
                         <span>Python</span><span>PyTorch</span><span>Hugging Face</span><span>CUDA</span><span>mixed precision</span><span>Linux</span>
@@ -185,28 +174,28 @@
                 <article class="entry">
                     <div class="entry-top">
                         <h3>AI Engineer Intern</h3>
-                        <span class="when">aug 2025 — dec 2025</span>
+                        <span class="when">aug 2025 to dec 2025</span>
                     </div>
-                    <p class="entry-org"><a href="https://www.sarvam.ai/" target="_blank" rel="noopener noreferrer">Sarvam AI</a> — media &amp; dubbing</p>
+                    <p class="entry-org"><a href="https://www.sarvam.ai/" target="_blank" rel="noopener noreferrer">Sarvam AI</a>, media &amp; dubbing</p>
                     <ul>
                         <li>Built an <strong>automated evaluation framework</strong> for an NVIDIA lip-sync model; the quantitative pipeline caught and resolved a bug causing ~500% variance in output video file sizes.</li>
-                        <li>Redesigned the production <strong>dubbing pipeline</strong> — replaced brittle hard-coded prompt harnesses with modular YAML instruction blocks that let the model's chain-of-thought infer context, raising translation quality;
-                            picked the final configuration by A/B test.</li>
+                        <li>Redesigned the production <strong>dubbing pipeline</strong>, replacing brittle hard-coded prompt harnesses with modular YAML instruction blocks that let the model's chain-of-thought infer context. Translation quality went
+                            up, and I picked the final configuration by A/B test.</li>
                     </ul>
                     <div class="tags">
                         <span>Python</span><span>YAML</span><span>data pipelines</span><span>LLM APIs</span><span>A/B testing</span><span>Git</span>
                     </div>
                     <div class="refs">
-                        <a href="https://www.youtube.com/watch?v=KNEJcCtoE4M" target="_blank" rel="noopener noreferrer">↗ pipeline in production (video)</a>
+                        <a href="https://www.youtube.com/watch?v=KNEJcCtoE4M" target="_blank" rel="noopener noreferrer">pipeline in production (video)</a>
                     </div>
                 </article>
             </section>
 
-            <!-- ======================== selected work ======================= -->
+            <!-- ========================= selected work ======================= -->
             <section aria-labelledby="s-work">
                 <div class="sec-head">
                     <span class="idx">03</span>
-                    <h2 id="s-work">selected work</h2>
+                    <h2 id="s-work">Selected work</h2>
                     <span class="aside">solo, with writeups</span>
                 </div>
 
@@ -216,15 +205,15 @@
                         <span class="when">2026</span>
                     </div>
                     <ul>
-                        <li>Hand-designed an <strong>interpretable 2-layer transformer</strong> that performs two-digit addition with manually-set weights and <strong>no gradient descent</strong> — building attention and MLP computation from first
+                        <li>Hand-designed an <strong>interpretable 2-layer transformer</strong> that performs two-digit addition with manually-set weights and <strong>no gradient descent</strong>, building attention and MLP computation from first
                             principles to show exactly what each component contributes.</li>
                     </ul>
                     <div class="tags">
                         <span>Python</span><span>PyTorch</span><span>NumPy</span>
                     </div>
                     <div class="refs">
-                        <a href="https://silicognition.is-a.dev/post2.html" target="_blank" rel="noopener noreferrer">↗ writeup</a>
-                        <a href="https://aritro.is-a.dev/forgeformer/">↗ interactive demo</a>
+                        <a href="https://silicognition.is-a.dev/post2.html" target="_blank" rel="noopener noreferrer">writeup</a>
+                        <a href="https://aritro.is-a.dev/forgeformer/">interactive demo</a>
                     </div>
                 </article>
 
@@ -234,14 +223,14 @@
                         <span class="when">2026</span>
                     </div>
                     <ul>
-                        <li>Replicated <strong>Anthropic's persona / emotion-vector methodology</strong> to extract a steering vector for each of the seven deadly sins in Gemma — on a single consumer GPU.</li>
+                        <li>Replicated <strong>Anthropic's persona / emotion-vector methodology</strong> to extract a steering vector for each of the seven deadly sins in Gemma, on a single consumer GPU.</li>
                         <li>Verified vector correctness through <strong>targeted steering and activation-patching experiments</strong> rather than eyeballing generations.</li>
                     </ul>
                     <div class="tags">
                         <span>Python</span><span>PyTorch</span><span>Hugging Face</span><span>Gemma</span>
                     </div>
                     <div class="refs">
-                        <a href="https://silicognition.is-a.dev/post3.html" target="_blank" rel="noopener noreferrer">↗ writeup</a>
+                        <a href="https://silicognition.is-a.dev/post3.html" target="_blank" rel="noopener noreferrer">writeup</a>
                     </div>
                 </article>
 
@@ -251,26 +240,26 @@
                         <span class="when">oct 2025</span>
                     </div>
                     <ul>
-                        <li>Built a modular Python engine that generates <strong>alpona</strong> — Bengali folk art — through fractal-based layering, with an extensible OOP style-registration system.</li>
+                        <li>Built a modular Python engine that generates <strong>alpona</strong>, a Bengali folk art, through fractal-based layering, with an extensible OOP style-registration system.</li>
                         <li>Published a <strong>13,000-image synthetic dataset</strong> at 1024×1024 on Kaggle for generative-AI research.</li>
                     </ul>
                     <div class="tags">
                         <span>Python</span><span>NumPy</span><span>OOP design</span>
                     </div>
                     <div class="refs">
-                        <a href="https://github.com/sortira/alpona-gen" target="_blank" rel="noopener noreferrer">↗ github</a>
-                        <a href="https://www.kaggle.com/datasets/ar1tr0/alpona-gen" target="_blank" rel="noopener noreferrer">↗ dataset</a>
+                        <a href="https://github.com/sortira/alpona-gen" target="_blank" rel="noopener noreferrer">github</a>
+                        <a href="https://www.kaggle.com/datasets/ar1tr0/alpona-gen" target="_blank" rel="noopener noreferrer">dataset</a>
                     </div>
                 </article>
 
                 <p class="note">Some work with partner orgs is unpublished. More builds on the <a href="other.html">other page</a>.</p>
             </section>
 
-            <!-- =========================== writing ========================== -->
+            <!-- ============================ writing ========================== -->
             <section aria-labelledby="s-write">
                 <div class="sec-head">
                     <span class="idx">04</span>
-                    <h2 id="s-write">writing</h2>
+                    <h2 id="s-write">Writing</h2>
                 </div>
                 <div class="writing">
                     <a class="url" href="https://silicognition.is-a.dev/" target="_blank" rel="noopener noreferrer">silicognition.is-a.dev</a>
@@ -278,43 +267,43 @@
                 </div>
             </section>
 
-            <!-- ========================= credentials ======================== -->
+            <!-- ========================== credentials ======================== -->
             <section aria-labelledby="s-cred">
                 <div class="sec-head">
                     <span class="idx">05</span>
-                    <h2 id="s-cred">education, awards &amp; teaching</h2>
-                    <span class="aside"><a class="plain" href="other.html">more →</a></span>
+                    <h2 id="s-cred">Education, awards &amp; teaching</h2>
+                    <span class="aside"><a class="plain" href="other.html">more</a></span>
                 </div>
                 <div class="cred">
                     <div>
-                        <h3>education</h3>
+                        <h3>Education</h3>
                         <ul>
-                            <li><b>B.Tech, Information Technology</b> — IIEST Shibpur
-                                <span class="sub">2024 — 2028 · CGPA 9.15 / 10</span>
+                            <li><b>B.Tech in Information Technology</b>, IIEST Shibpur
+                                <span class="sub">2024 to 2028 · CGPA 9.15 / 10</span>
                             </li>
-                            <li><b>INSPIRE Scholarship</b> — Government of India
+                            <li><b>INSPIRE Scholarship</b>, Government of India
                                 <span class="sub">awarded to the top 1% of the higher-secondary cohort</span>
                             </li>
                         </ul>
                     </div>
                     <div>
-                        <h3>selected awards</h3>
+                        <h3>Selected awards</h3>
                         <ul>
-                            <li><b>1st</b> — TensorQuest ML Hackathon, Instruo 2025
+                            <li><b>1st</b> at TensorQuest ML Hackathon, Instruo 2025
                                 <span class="sub">100+ teams across India</span>
                             </li>
-                            <li><b>1st</b> — Brain Dead ML Hackathon, Revelation 2025
+                            <li><b>1st</b> at Brain Dead ML Hackathon, Revelation 2025
                                 <span class="sub">~200 teams</span>
                             </li>
-                            <li><b>1st</b> — Prof. Brahma Prakash Memorial Paper Presentation, IGCAR Kalpakkam
+                            <li><b>1st</b> at the Prof. Brahma Prakash Memorial Paper Presentation, IGCAR Kalpakkam
                                 <span class="sub">2023 · 500+ applicants · paper on AI/ML in materials research</span>
                             </li>
                         </ul>
                     </div>
                     <div>
-                        <h3>teaching</h3>
+                        <h3>Teaching</h3>
                         <ul>
-                            <li><b>AI/ML Co-Lead</b> — Google Developer Groups on Campus, IIEST Shibpur
+                            <li><b>AI/ML Co-Lead</b>, Google Developer Groups on Campus, IIEST Shibpur
                                 <span class="sub">ran sessions on deep learning and transformer architecture; mentored a junior into an internship</span>
                             </li>
                         </ul>
@@ -322,23 +311,21 @@
                 </div>
             </section>
 
-        </div>
-
-        <!-- ============================ footer ============================ -->
-        <footer>
-            <div class="shell">
+            <!-- ============================= footer ========================== -->
+            <footer>
                 <div class="foot-grid">
-                    <p class="foot-say">If you're building ML systems, research tooling, or infrastructure that has to hold up in production — I'd like to hear from you. <a href="mailto:aritro.shome.official@gmail.com">Say hello</a>. I'm in Calcutta;
-                        happy to meet for a walk.</p>
+                    <p class="foot-say">If you are building ML systems, research tooling, or infrastructure that has to hold up in production, I would like to hear from you. <a href="mailto:aritro.shome.official@gmail.com">Say hello</a>. I am in
+                        Calcutta and happy to meet for a walk.</p>
                     <p class="foot-meta">
                         <a href="https://github.com/sortira" target="_blank" rel="noopener noreferrer">github</a> ·
                         <a href="https://x.com/silicognition" target="_blank" rel="noopener noreferrer">twitter</a> ·
-                        <a href="resume.pdf">résumé</a><br /> last updated <time datetime="2026-08-02">2 aug 2026</time>
+                        <a href="resume.pdf">résumé</a><br /> last updated <time datetime="2026-08-26">26 aug 2026</time>
                     </p>
                 </div>
-            </div>
-        </footer>
-    </main>
+            </footer>
+
+        </main>
+    </div>
 </body>
 
 </html>

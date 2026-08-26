@@ -1,4 +1,4 @@
-/* aritro.is-a.dev — theme toggle.
+/* aritro.is-a.dev theme toggle.
    The pre-paint theme read lives inline in each page's <head>; this file
    only handles interaction, so it can safely be deferred. */
 
@@ -10,7 +10,7 @@
 
   function sync() {
     var t = root.getAttribute('data-theme');
-    if (lbl) lbl.textContent = t;
+    if (lbl) lbl.textContent = (t === 'dark' ? 'light mode' : 'dark mode');
     btn.setAttribute('aria-label', 'Switch to ' + (t === 'dark' ? 'light' : 'dark') + ' theme');
   }
   sync();

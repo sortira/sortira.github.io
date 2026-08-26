@@ -1,8 +1,8 @@
-# Aritro Shome — everything else
+# Aritro Shome, everything else
 
-[← back to main](https://aritro.is-a.dev/index.html.md)
+[Back to the main page](https://aritro.is-a.dev/index.html.md)
 
-The supporting detail — tooling I actually reach for, smaller things I've built, and coursework. The research lives on the main page.
+The research and the work worth reading about live on the main page. This is the rest of the record: what I know my way around, the smaller builds, and where I came from before university.
 
 ## Tooling
 
@@ -15,14 +15,14 @@ The supporting detail — tooling I actually reach for, smaller things I've buil
 
 ## Smaller builds
 
-- **ML & NLP from scratch** — linear/logistic/softmax regression, KNN, k-means, MLP, bag-of-words, TF-IDF, CBOW, skip-gram, byte-pair encoding, naïve Bayes and an LSTM sentiment classifier, all in pure NumPy/PyTorch with no black boxes. [github](https://github.com/sortira)
-- **Abler** — real-time multimodal accessibility assistant for the visually impaired: object detection, depth estimation, speech and gesture recognition. Won eXabyte; Best Design at Hacknoware. [github](https://github.com/TheSopranos) · [demo](https://youtu.be/hdMCwxbb7FY)
-- **IPL 2025 predictor** — decision trees, random forests, MLP classifiers and Monte Carlo simulation over a full EDA pipeline, plus a score-based statistical query system. Won Brain Dead 2025. [github](https://github.com/sortira/BrainDead2025)
-- **Vidvaan** — research-paper aggregator unifying DBLP, arXiv, OpenLibrary and OpenAlex, with Gemini summarisation.
-- **Thomas Raw** — agentic travel planner on Gemini + LangChain; plans itineraries, budgets, and identifies locations from photos. [github](https://github.com/sortira/thomas-raw)
-- **MentL** — mental wellness assistant; Best Design Award, Hacknoware 2025.
-- **Where Am I?** — browser-based geography guessing game.
-- **Model frontends** — PPG encoder and SMS spam classifier interfaces built to make the underlying models usable; awarded at Tensor Quest, Instruo 2025.
+- **ML & NLP from scratch**: linear/logistic/softmax regression, KNN, k-means, MLP, bag-of-words, TF-IDF, CBOW, skip-gram, byte-pair encoding, naïve Bayes and an LSTM sentiment classifier, all in pure NumPy/PyTorch with no black boxes. [github](https://github.com/sortira)
+- **Abler**: real-time multimodal accessibility assistant for the visually impaired, with object detection, depth estimation, speech and gesture recognition. Won eXabyte; Best Design at Hacknoware. [github](https://github.com/TheSopranos) · [demo](https://youtu.be/hdMCwxbb7FY)
+- **IPL 2025 predictor**: decision trees, random forests, MLP classifiers and Monte Carlo simulation over a full EDA pipeline, plus a score-based statistical query system. Won Brain Dead 2025. [github](https://github.com/sortira/BrainDead2025)
+- **Vidvaan**: research-paper aggregator unifying DBLP, arXiv, OpenLibrary and OpenAlex, with Gemini summarisation.
+- **Thomas Raw**: agentic travel planner on Gemini and LangChain; plans itineraries, budgets, and identifies locations from photos. [github](https://github.com/sortira/thomas-raw)
+- **MentL**: mental wellness assistant; Best Design Award, Hacknoware 2025.
+- **Where Am I?**: browser-based geography guessing game.
+- **Model frontends**: PPG encoder and SMS spam classifier interfaces built to make the underlying models usable; awarded at Tensor Quest, Instruo 2025.
 
 ## Certifications
 
@@ -38,10 +38,10 @@ The supporting detail — tooling I actually reach for, smaller things I've buil
 
 **School**
 
-- All India Rank 6, West Bengal Rank 5 — CISCE Class 10 board examinations, 98.8% aggregate (M. P. Birla Foundation Higher Secondary School, Kolkata)
-- ISC 95.3% / ICSE 98.3% (2010 – 2024)
+- All India Rank 6 and West Bengal Rank 5 in the CISCE Class 10 board examinations, 98.8% aggregate (M. P. Birla Foundation Higher Secondary School, Kolkata)
+- ISC 95.3% / ICSE 98.3% (2010 to 2024)
 
 **Competitions**
 
-- Global Rank 12 — International Mathematical Championship, 2022
-- 1st — national Essay-cum-Elocution contest, Indian Institute of Metals, 2023 (paper on the role of AI/ML in materials science)
+- Global Rank 12 at the International Mathematical Championship, 2022
+- 1st at the national Essay-cum-Elocution contest, Indian Institute of Metals, 2023 (paper on the role of AI/ML in materials science)

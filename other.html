@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aritro Shome — skills, builds &amp; certifications</title>
-    <meta name="description" content="Aritro Shome — technical skills, smaller builds, certifications and earlier academic results." />
+    <title>Aritro Shome, skills, builds &amp; certifications</title>
+    <meta name="description" content="Aritro Shome. Technical skills, smaller builds, certifications and earlier academic results." />
     <meta name="author" content="Aritro Shome" />
     <link rel="canonical" href="https://aritro.is-a.dev/other.html" />
-    <meta name="theme-color" content="#0b0b0d" media="(prefers-color-scheme: dark)" />
-    <meta name="theme-color" content="#fcfbf9" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#16181a" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)" />
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Aritro Shome" />
-    <meta property="og:title" content="Aritro Shome — skills, builds &amp; certifications" />
+    <meta property="og:title" content="Aritro Shome, skills, builds &amp; certifications" />
     <meta property="og:description" content="Technical skills, smaller builds, certifications and earlier academic results." />
     <meta property="og:url" content="https://aritro.is-a.dev/other.html" />
     <meta property="og:image" content="https://aritro.is-a.dev/og.png" />
@@ -27,9 +27,6 @@
     <link rel="icon" href="icon-512.png" sizes="512x512" type="image/png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300..600&family=Inter:wght@400..600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="site.css" />
 
     <script>
@@ -37,7 +34,7 @@
             var s = null;
             try { s = localStorage.getItem('theme'); } catch (e) {}
             document.documentElement.setAttribute('data-theme',
-                s || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'));
+                s || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
         })();
     </script>
     <script src="site.js" defer></script>
@@ -47,34 +44,40 @@
 <body>
     <a class="skip" href="#main">skip to content</a>
 
-    <div class="shell">
-        <div class="topbar">
-            <a class="wordmark" href="index.html" aria-label="Back to home">
-                <img src="icon-32.png" alt="" width="22" height="22" />
-                <span>← aritro shome</span>
-            </a>
-            <button class="theme-btn" id="theme-btn" type="button" aria-label="Switch colour theme">
-                <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.4M12 19.2v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.4 12h2.4M19.2 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
-                <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.4A8.6 8.6 0 1 1 9.6 3.5a6.9 6.9 0 0 0 10.9 10.9Z"/></svg>
-                <span id="theme-label">dark</span>
-            </button>
-        </div>
-    </div>
+    <div class="layout">
 
-    <main id="main">
-        <div class="shell">
+        <!-- ============================= rail ============================= -->
+        <aside class="rail">
+            <p class="rail-kicker">appendix</p>
+            <h1>Everything else</h1>
+            <p class="rail-note">Tooling I actually reach for, smaller things I have built, and coursework.</p>
+
+            <nav class="railnav" aria-label="On this page">
+                <a href="#s-skills">Tooling</a>
+                <a href="#s-builds">Smaller builds</a>
+                <a href="#s-certs">Certifications</a>
+                <a href="#s-earlier">Earlier</a>
+            </nav>
+
+            <p class="rail-back"><a href="index.html">Back to the main page</a></p>
+
+            <p class="rail-theme">
+                <button class="theme-btn" id="theme-btn" type="button" aria-label="Switch colour theme"><span id="theme-label">dark mode</span></button>
+            </p>
+        </aside>
+
+        <main id="main" class="flow">
 
             <header class="hero">
-                <p class="eyebrow">appendix</p>
-                <h1>Everything else</h1>
-                <p class="page-intro">The supporting detail — tooling I actually reach for, smaller things I've built, and coursework. The research lives on the <a href="index.html">main page</a>.</p>
+                <p class="page-intro">The research and the work worth reading about live on the <a href="index.html">main page</a>. This is the rest of the record: what I know my way around, the smaller builds, and where I came from before
+                    university.</p>
             </header>
 
-            <!-- ============================ skills =========================== -->
+            <!-- ============================ tooling ========================== -->
             <section aria-labelledby="s-skills">
                 <div class="sec-head">
                     <span class="idx">01</span>
-                    <h2 id="s-skills">tooling</h2>
+                    <h2 id="s-skills">Tooling</h2>
                 </div>
                 <div class="taggroup">
                     <div class="row">
@@ -120,19 +123,19 @@
             <section aria-labelledby="s-builds">
                 <div class="sec-head">
                     <span class="idx">02</span>
-                    <h2 id="s-builds">smaller builds</h2>
+                    <h2 id="s-builds">Smaller builds</h2>
                 </div>
                 <ul class="builds">
-                    <li><b>ML &amp; NLP from scratch</b> — linear/logistic/softmax regression, KNN, k-means, MLP, bag-of-words, TF-IDF, CBOW, skip-gram, byte-pair encoding, naïve Bayes and an LSTM sentiment classifier, all in pure NumPy/PyTorch with no
-                        black boxes. <a href="https://github.com/sortira" target="_blank" rel="noopener noreferrer">github ↗</a></li>
-                    <li><b>Abler</b> — real-time multimodal accessibility assistant for the visually impaired: object detection, depth estimation, speech and gesture recognition. Won eXabyte; Best Design at Hacknoware. <a href="https://github.com/TheSopranos" target="_blank" rel="noopener noreferrer">github ↗</a>
-                        <a href="https://youtu.be/hdMCwxbb7FY" target="_blank" rel="noopener noreferrer">demo ↗</a></li>
-                    <li><b>IPL 2025 predictor</b> — decision trees, random forests, MLP classifiers and Monte Carlo simulation over a full EDA pipeline, plus a score-based statistical query system. Won Brain Dead 2025. <a href="https://github.com/sortira/BrainDead2025" target="_blank" rel="noopener noreferrer">github ↗</a></li>
-                    <li><b>Vidvaan</b> — research-paper aggregator unifying DBLP, arXiv, OpenLibrary and OpenAlex, with Gemini summarisation.</li>
-                    <li><b>Thomas Raw</b> — agentic travel planner on Gemini + LangChain; plans itineraries, budgets, and identifies locations from photos. <a href="https://github.com/sortira/thomas-raw" target="_blank" rel="noopener noreferrer">github ↗</a></li>
-                    <li><b>MentL</b> — mental wellness assistant; Best Design Award, Hacknoware 2025.</li>
-                    <li><b>Where Am I?</b> — browser-based geography guessing game.</li>
-                    <li><b>Model frontends</b> — PPG encoder and SMS spam classifier interfaces built to make the underlying models usable; awarded at Tensor Quest, Instruo 2025.</li>
+                    <li><b>ML &amp; NLP from scratch</b>: linear/logistic/softmax regression, KNN, k-means, MLP, bag-of-words, TF-IDF, CBOW, skip-gram, byte-pair encoding, naïve Bayes and an LSTM sentiment classifier, all in pure NumPy/PyTorch with
+                        no black boxes. <a href="https://github.com/sortira" target="_blank" rel="noopener noreferrer">github</a></li>
+                    <li><b>Abler</b>: real-time multimodal accessibility assistant for the visually impaired, with object detection, depth estimation, speech and gesture recognition. Won eXabyte; Best Design at Hacknoware. <a href="https://github.com/TheSopranos" target="_blank" rel="noopener noreferrer">github</a>
+                        <a href="https://youtu.be/hdMCwxbb7FY" target="_blank" rel="noopener noreferrer">demo</a></li>
+                    <li><b>IPL 2025 predictor</b>: decision trees, random forests, MLP classifiers and Monte Carlo simulation over a full EDA pipeline, plus a score-based statistical query system. Won Brain Dead 2025. <a href="https://github.com/sortira/BrainDead2025" target="_blank" rel="noopener noreferrer">github</a></li>
+                    <li><b>Vidvaan</b>: research-paper aggregator unifying DBLP, arXiv, OpenLibrary and OpenAlex, with Gemini summarisation.</li>
+                    <li><b>Thomas Raw</b>: agentic travel planner on Gemini and LangChain; plans itineraries, budgets, and identifies locations from photos. <a href="https://github.com/sortira/thomas-raw" target="_blank" rel="noopener noreferrer">github</a></li>
+                    <li><b>MentL</b>: mental wellness assistant; Best Design Award, Hacknoware 2025.</li>
+                    <li><b>Where Am I?</b>: browser-based geography guessing game.</li>
+                    <li><b>Model frontends</b>: PPG encoder and SMS spam classifier interfaces built to make the underlying models usable; awarded at Tensor Quest, Instruo 2025.</li>
                 </ul>
             </section>
 
@@ -140,7 +143,7 @@
             <section aria-labelledby="s-certs">
                 <div class="sec-head">
                     <span class="idx">03</span>
-                    <h2 id="s-certs">certifications</h2>
+                    <h2 id="s-certs">Certifications</h2>
                     <span class="aside">deeplearning.ai · google cloud</span>
                 </div>
                 <div class="tags">
@@ -154,32 +157,32 @@
                 </div>
             </section>
 
-            <!-- =========================== earlier ========================== -->
+            <!-- ============================ earlier ========================== -->
             <section aria-labelledby="s-earlier">
                 <div class="sec-head">
                     <span class="idx">04</span>
-                    <h2 id="s-earlier">earlier</h2>
+                    <h2 id="s-earlier">Earlier</h2>
                     <span class="aside">pre-university</span>
                 </div>
                 <div class="cred">
                     <div>
-                        <h3>school</h3>
+                        <h3>School</h3>
                         <ul>
-                            <li><b>All India Rank 6</b>, West Bengal Rank 5 — CISCE Class 10 board examinations
+                            <li><b>All India Rank 6</b> and West Bengal Rank 5 in the CISCE Class 10 board examinations
                                 <span class="sub">98.8% aggregate · M. P. Birla Foundation HS School, Kolkata</span>
                             </li>
                             <li><b>ISC 95.3%</b> / <b>ICSE 98.3%</b>
-                                <span class="sub">2010 — 2024</span>
+                                <span class="sub">2010 to 2024</span>
                             </li>
                         </ul>
                     </div>
                     <div>
-                        <h3>competitions</h3>
+                        <h3>Competitions</h3>
                         <ul>
-                            <li><b>Global Rank 12</b> — International Mathematical Championship
+                            <li><b>Global Rank 12</b> at the International Mathematical Championship
                                 <span class="sub">2022</span>
                             </li>
-                            <li><b>1st</b> — national Essay-cum-Elocution contest, Indian Institute of Metals
+                            <li><b>1st</b> at the national Essay-cum-Elocution contest, Indian Institute of Metals
                                 <span class="sub">2023 · paper on the role of AI/ML in materials science</span>
                             </li>
                         </ul>
@@ -187,21 +190,19 @@
                 </div>
             </section>
 
-        </div>
-
-        <footer>
-            <div class="shell">
+            <footer>
                 <div class="foot-grid">
-                    <p class="foot-say"><a href="index.html">← back to the research</a></p>
+                    <p class="foot-say"><a href="index.html">Back to the research</a></p>
                     <p class="foot-meta">
                         <a href="https://github.com/sortira" target="_blank" rel="noopener noreferrer">github</a> ·
                         <a href="https://x.com/silicognition" target="_blank" rel="noopener noreferrer">twitter</a> ·
-                        <a href="resume.pdf">résumé</a><br /> last updated <time datetime="2026-08-02">2 aug 2026</time>
+                        <a href="resume.pdf">résumé</a><br /> last updated <time datetime="2026-08-26">26 aug 2026</time>
                     </p>
                 </div>
-            </div>
-        </footer>
-    </main>
+            </footer>
+
+        </main>
+    </div>
 </body>
 
 </html>
