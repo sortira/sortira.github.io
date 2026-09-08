@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aritro Shome, skills, builds &amp; certifications</title>
+    <title>aritro, everything else</title>
     <meta name="description" content="Aritro Shome. Technical skills, smaller builds, certifications and earlier academic results." />
     <meta name="author" content="Aritro Shome" />
     <link rel="canonical" href="https://aritro.is-a.dev/other.html" />
-    <meta name="theme-color" content="#16181a" media="(prefers-color-scheme: dark)" />
-    <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#fcfcfa" />
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Aritro Shome" />
@@ -27,182 +26,142 @@
     <link rel="icon" href="icon-512.png" sizes="512x512" type="image/png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
     <link rel="stylesheet" href="site.css" />
 
-    <script>
-        (function () {
-            var s = null;
-            try { s = localStorage.getItem('theme'); } catch (e) {}
-            document.documentElement.setAttribute('data-theme',
-                s || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-        })();
-    </script>
-    <script src="site.js" defer></script>
     <script data-goatcounter="https://portfolio1.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 
 <body>
     <a class="skip" href="#main">skip to content</a>
 
-    <div class="layout">
+    <!-- ============================== masthead ============================= -->
+    <header class="masthead plain">
+        <div class="name">
+            <p class="kicker">appendix</p>
+            <h1>everything else</h1>
+        </div>
+        <p class="dir">
+            <a href="index.html">back to the main page</a>
+            <a href="#s-tools">tooling</a>
+            <a href="#s-builds">builds</a>
+            <a href="#s-certs">certifications</a>
+            <a href="#s-earlier">earlier</a>
+        </p>
+    </header>
 
-        <!-- ============================= rail ============================= -->
-        <aside class="rail">
-            <p class="rail-kicker">appendix</p>
-            <h1>Everything else</h1>
-            <p class="rail-note">Tooling I actually reach for, smaller things I have built, and coursework.</p>
+    <main id="main">
 
-            <nav class="railnav" aria-label="On this page">
-                <a href="#s-skills">Tooling</a>
-                <a href="#s-builds">Smaller builds</a>
-                <a href="#s-certs">Certifications</a>
-                <a href="#s-earlier">Earlier</a>
-            </nav>
+        <div class="lede">
+            <p>the research and the work worth reading about live on the <a href="index.html">main page</a>. this is the rest of the record: what i know my way around, the smaller builds, and where i came from before university.</p>
+        </div>
 
-            <p class="rail-back"><a href="index.html">Back to the main page</a></p>
+        <!-- =============================== tooling ============================= -->
+        <section aria-labelledby="s-tools">
+            <h2 id="s-tools"><span class="num">01</span> tooling</h2>
+            <div class="rows">
+                <div class="row">
+                    <h3>interpretability</h3>
+                    <p class="terms"><span>activation patching</span><span>circuit tracing</span><span>steering vectors</span><span>logit lens</span><span>component attribution</span></p>
+                </div>
+                <div class="row">
+                    <h3>ml</h3>
+                    <p class="terms"><span>PyTorch</span><span>Hugging Face Transformers</span><span>Scikit-Learn</span><span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>LangChain</span></p>
+                </div>
+                <div class="row">
+                    <h3>infra</h3>
+                    <p class="terms"><span>multi-GPU clusters</span><span>VRAM-constrained training</span><span>CUDA</span><span>mixed precision</span><span>Docker</span><span>Linux</span><span>Git</span></p>
+                </div>
+                <div class="row">
+                    <h3>languages</h3>
+                    <p class="terms"><span>Python</span><span>Java</span><span>C/C++</span><span>JavaScript</span><span>HTML/CSS</span><span>Flask</span></p>
+                </div>
+                <div class="row">
+                    <h3>concepts</h3>
+                    <p class="terms"><span>transformers</span><span>LLMs &amp; VLMs</span><span>reinforcement learning</span><span>linear algebra</span><span>probability &amp; statistics</span><span>DSA</span><span>OOP</span></p>
+                </div>
+                <div class="row">
+                    <h3>core cs <span class="bad">(learning)</span></h3>
+                    <p class="terms"><span>distributed systems</span><span>database internals</span><span>concurrency</span><span>algorithms &amp; theory</span></p>
+                </div>
+            </div>
+        </section>
 
-            <p class="rail-theme">
-                <button class="theme-btn" id="theme-btn" type="button" aria-label="Switch colour theme"><span id="theme-label">dark mode</span></button>
+        <!-- =============================== builds ============================== -->
+        <section aria-labelledby="s-builds">
+            <h2 id="s-builds"><span class="num">02</span> smaller builds</h2>
+            <ul class="builds">
+                <li><b>ml &amp; nlp from scratch</b>: linear/logistic/softmax regression, KNN, k-means, MLP, bag-of-words, TF-IDF, CBOW, skip-gram, byte-pair encoding, naïve Bayes and an LSTM sentiment classifier, all in pure NumPy/PyTorch with no
+                    black boxes. <a href="https://github.com/sortira" target="_blank" rel="noopener noreferrer">github</a></li>
+                <li><b>Abler</b>: real-time multimodal accessibility assistant for the visually impaired, with object detection, depth estimation, speech and gesture recognition. <span class="good">won eXabyte</span>; best design at Hacknoware.
+                    <a href="https://github.com/TheSopranos" target="_blank" rel="noopener noreferrer">github</a> <a href="https://youtu.be/hdMCwxbb7FY" target="_blank" rel="noopener noreferrer">demo</a></li>
+                <li><b>ipl 2025 predictor</b>: decision trees, random forests, MLP classifiers and Monte Carlo simulation over a full EDA pipeline, plus a score-based statistical query system. <span class="good">won Brain Dead 2025</span>.
+                    <a href="https://github.com/sortira/BrainDead2025" target="_blank" rel="noopener noreferrer">github</a></li>
+                <li><b>Vidvaan</b>: research-paper aggregator unifying DBLP, arXiv, OpenLibrary and OpenAlex, with Gemini summarisation.</li>
+                <li><b>Thomas Raw</b>: agentic travel planner on Gemini and LangChain; plans itineraries, budgets, and identifies locations from photos. <a href="https://github.com/sortira/thomas-raw" target="_blank" rel="noopener noreferrer">github</a></li>
+                <li><b>MentL</b>: mental wellness assistant; best design award, Hacknoware 2025.</li>
+                <li><b>where am i?</b>: browser-based geography guessing game.</li>
+                <li><b>model frontends</b>: PPG encoder and SMS spam classifier interfaces built to make the underlying models usable; awarded at Tensor Quest, Instruo 2025.</li>
+            </ul>
+        </section>
+
+        <!-- ============================ certifications ========================= -->
+        <section aria-labelledby="s-certs">
+            <h2 id="s-certs"><span class="num">03</span> certifications <span class="tail">deeplearning.ai / google cloud</span></h2>
+            <p class="terms">
+                <a href="https://coursera.org/share/a3e148a3403eb27d4e6dd0bb2bd6827a" target="_blank" rel="noopener noreferrer">deep learning specialization</a>
+                <a href="https://coursera.org/share/98f350fe855684f2b6569547d064ec36" target="_blank" rel="noopener noreferrer">convolutional neural networks</a>
+                <a href="https://coursera.org/share/bb8533789cc61159dd1b879f3b39e8ff" target="_blank" rel="noopener noreferrer">sequence models</a>
+                <a href="https://coursera.org/share/82692be00bb1de9220627bc1e82c6fe9" target="_blank" rel="noopener noreferrer">structuring ml projects</a>
+                <a href="https://coursera.org/share/ccf3d344aebd01c5f3355351b0bddfa8" target="_blank" rel="noopener noreferrer">improving deep neural networks</a>
+                <a href="https://www.credly.com/badges/fbf606dd-a04b-421e-b88c-a3cfe2f13957/public_url" target="_blank" rel="noopener noreferrer">genai with Gemini</a>
+                <a href="https://www.credly.com/badges/bcb7823a-a404-473d-b831-ae316b98b001/public_url" target="_blank" rel="noopener noreferrer">Vertex AI Studio</a>
             </p>
-        </aside>
+        </section>
 
-        <main id="main" class="flow">
+        <!-- =============================== earlier ============================= -->
+        <section aria-labelledby="s-earlier">
+            <h2 id="s-earlier"><span class="num">04</span> earlier <span class="tail">pre-university</span></h2>
+            <div class="cols">
+                <div>
+                    <h3>school</h3>
+                    <ul>
+                        <li><b>all india rank 6</b> and west bengal rank 5 in the CISCE class 10 board examinations
+                            <span class="sub">98.8% aggregate &middot; M. P. Birla Foundation HS School, Kolkata</span>
+                        </li>
+                        <li><b>isc 95.3%</b> / <b>icse 98.3%</b>
+                            <span class="sub">2010 to 2024</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>competitions</h3>
+                    <ul>
+                        <li><b>global rank 12</b> at the International Mathematical Championship
+                            <span class="sub">2022</span>
+                        </li>
+                        <li><b class="good">1st</b> at the national essay-cum-elocution contest, Indian Institute of Metals
+                            <span class="sub">2023 &middot; paper on the role of ai/ml in materials science</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-            <header class="hero">
-                <p class="page-intro">The research and the work worth reading about live on the <a href="index.html">main page</a>. This is the rest of the record: what I know my way around, the smaller builds, and where I came from before
-                    university.</p>
-            </header>
+    </main>
 
-            <!-- ============================ tooling ========================== -->
-            <section aria-labelledby="s-skills">
-                <div class="sec-head">
-                    <span class="idx">01</span>
-                    <h2 id="s-skills">Tooling</h2>
-                </div>
-                <div class="taggroup">
-                    <div class="row">
-                        <h3>interpretability</h3>
-                        <div class="tags">
-                            <span>activation patching</span><span>circuit tracing</span><span>steering vectors</span><span>logit lens</span><span>component attribution</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <h3>ml</h3>
-                        <div class="tags">
-                            <span>PyTorch</span><span>Hugging Face Transformers</span><span>Scikit-Learn</span><span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>LangChain</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <h3>infra</h3>
-                        <div class="tags">
-                            <span>multi-GPU clusters</span><span>VRAM-constrained training</span><span>CUDA</span><span>mixed precision</span><span>Docker</span><span>Linux</span><span>Git</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <h3>languages</h3>
-                        <div class="tags">
-                            <span>Python</span><span>Java</span><span>C/C++</span><span>JavaScript</span><span>HTML/CSS</span><span>Flask</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <h3>concepts</h3>
-                        <div class="tags">
-                            <span>transformers</span><span>LLMs &amp; VLMs</span><span>reinforcement learning</span><span>linear algebra</span><span>probability &amp; statistics</span><span>DSA</span><span>OOP</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <h3>core cs <span class="wip">(learning)</span></h3>
-                        <div class="tags">
-                            <span>distributed systems</span><span>database internals</span><span>concurrency</span><span>algorithms &amp; theory</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ============================ builds =========================== -->
-            <section aria-labelledby="s-builds">
-                <div class="sec-head">
-                    <span class="idx">02</span>
-                    <h2 id="s-builds">Smaller builds</h2>
-                </div>
-                <ul class="builds">
-                    <li><b>ML &amp; NLP from scratch</b>: linear/logistic/softmax regression, KNN, k-means, MLP, bag-of-words, TF-IDF, CBOW, skip-gram, byte-pair encoding, naïve Bayes and an LSTM sentiment classifier, all in pure NumPy/PyTorch with
-                        no black boxes. <a href="https://github.com/sortira" target="_blank" rel="noopener noreferrer">github</a></li>
-                    <li><b>Abler</b>: real-time multimodal accessibility assistant for the visually impaired, with object detection, depth estimation, speech and gesture recognition. Won eXabyte; Best Design at Hacknoware. <a href="https://github.com/TheSopranos" target="_blank" rel="noopener noreferrer">github</a>
-                        <a href="https://youtu.be/hdMCwxbb7FY" target="_blank" rel="noopener noreferrer">demo</a></li>
-                    <li><b>IPL 2025 predictor</b>: decision trees, random forests, MLP classifiers and Monte Carlo simulation over a full EDA pipeline, plus a score-based statistical query system. Won Brain Dead 2025. <a href="https://github.com/sortira/BrainDead2025" target="_blank" rel="noopener noreferrer">github</a></li>
-                    <li><b>Vidvaan</b>: research-paper aggregator unifying DBLP, arXiv, OpenLibrary and OpenAlex, with Gemini summarisation.</li>
-                    <li><b>Thomas Raw</b>: agentic travel planner on Gemini and LangChain; plans itineraries, budgets, and identifies locations from photos. <a href="https://github.com/sortira/thomas-raw" target="_blank" rel="noopener noreferrer">github</a></li>
-                    <li><b>MentL</b>: mental wellness assistant; Best Design Award, Hacknoware 2025.</li>
-                    <li><b>Where Am I?</b>: browser-based geography guessing game.</li>
-                    <li><b>Model frontends</b>: PPG encoder and SMS spam classifier interfaces built to make the underlying models usable; awarded at Tensor Quest, Instruo 2025.</li>
-                </ul>
-            </section>
-
-            <!-- ======================== certifications ======================= -->
-            <section aria-labelledby="s-certs">
-                <div class="sec-head">
-                    <span class="idx">03</span>
-                    <h2 id="s-certs">Certifications</h2>
-                    <span class="aside">deeplearning.ai · google cloud</span>
-                </div>
-                <div class="tags">
-                    <a href="https://coursera.org/share/a3e148a3403eb27d4e6dd0bb2bd6827a" target="_blank" rel="noopener noreferrer">Deep Learning Specialization</a>
-                    <a href="https://coursera.org/share/98f350fe855684f2b6569547d064ec36" target="_blank" rel="noopener noreferrer">Convolutional Neural Networks</a>
-                    <a href="https://coursera.org/share/bb8533789cc61159dd1b879f3b39e8ff" target="_blank" rel="noopener noreferrer">Sequence Models</a>
-                    <a href="https://coursera.org/share/82692be00bb1de9220627bc1e82c6fe9" target="_blank" rel="noopener noreferrer">Structuring ML Projects</a>
-                    <a href="https://coursera.org/share/ccf3d344aebd01c5f3355351b0bddfa8" target="_blank" rel="noopener noreferrer">Improving Deep Neural Networks</a>
-                    <a href="https://www.credly.com/badges/fbf606dd-a04b-421e-b88c-a3cfe2f13957/public_url" target="_blank" rel="noopener noreferrer">GenAI with Gemini</a>
-                    <a href="https://www.credly.com/badges/bcb7823a-a404-473d-b831-ae316b98b001/public_url" target="_blank" rel="noopener noreferrer">Vertex AI Studio</a>
-                </div>
-            </section>
-
-            <!-- ============================ earlier ========================== -->
-            <section aria-labelledby="s-earlier">
-                <div class="sec-head">
-                    <span class="idx">04</span>
-                    <h2 id="s-earlier">Earlier</h2>
-                    <span class="aside">pre-university</span>
-                </div>
-                <div class="cred">
-                    <div>
-                        <h3>School</h3>
-                        <ul>
-                            <li><b>All India Rank 6</b> and West Bengal Rank 5 in the CISCE Class 10 board examinations
-                                <span class="sub">98.8% aggregate · M. P. Birla Foundation HS School, Kolkata</span>
-                            </li>
-                            <li><b>ISC 95.3%</b> / <b>ICSE 98.3%</b>
-                                <span class="sub">2010 to 2024</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Competitions</h3>
-                        <ul>
-                            <li><b>Global Rank 12</b> at the International Mathematical Championship
-                                <span class="sub">2022</span>
-                            </li>
-                            <li><b>1st</b> at the national Essay-cum-Elocution contest, Indian Institute of Metals
-                                <span class="sub">2023 · paper on the role of AI/ML in materials science</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <footer>
-                <div class="foot-grid">
-                    <p class="foot-say"><a href="index.html">Back to the research</a></p>
-                    <p class="foot-meta">
-                        <a href="https://github.com/sortira" target="_blank" rel="noopener noreferrer">github</a> ·
-                        <a href="https://x.com/silicognition" target="_blank" rel="noopener noreferrer">twitter</a> ·
-                        <a href="resume.pdf">résumé</a><br /> last updated <time datetime="2026-08-26">26 aug 2026</time>
-                    </p>
-                </div>
-            </footer>
-
-        </main>
-    </div>
+    <!-- =============================== footer ============================== -->
+    <footer>
+        <p class="colophon"><a href="index.html">back to the research</a></p>
+        <p class="stamp">
+            <a href="https://github.com/sortira" target="_blank" rel="noopener noreferrer">github</a> &middot;
+            <a href="https://x.com/silicognition" target="_blank" rel="noopener noreferrer">x</a> &middot;
+            <a href="https://www.youtube.com/@thearitroshomefromtech" target="_blank" rel="noopener noreferrer">youtube</a> &middot;
+            <a href="resume.pdf">résumé</a> &nbsp;&mdash;&nbsp; last updated <time datetime="2026-09-08">8 sep 2026</time>
+        </p>
+    </footer>
 </body>
 
 </html>
