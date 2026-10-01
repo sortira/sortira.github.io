@@ -376,6 +376,21 @@ h3 {
     border-top: 1px solid var(--rule-hair);
 }
 
+
+/* the newest role leads the section, full width and marked like the fold */
+
+.entry.lead {
+    margin-bottom: 1.3em;
+    padding-left: .85em;
+    border-left: 3px solid var(--good);
+}
+
+.entry .work {
+    margin: 0;
+    font-size: .89em;
+    line-height: 1.5;
+}
+
 .entry-head {
     display: flex;
     flex-wrap: wrap;

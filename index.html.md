@@ -4,14 +4,18 @@ Hi, I am Aritro, a CS/IT undergrad at IIEST Shibpur, and go by *sortira* on most
 
 ## At a glance
 
-- **Now**: research intern, AI4Bharat, IIT Madras. Circuit tracing in reasoning models, across Indic languages and model scales.
-- **Before**: AI engineer intern, Sarvam AI. Evaluation frameworks and the production dubbing pipeline.
+- **Now**: research intern, SPARC Labs, IISc Bangalore. Harnesses that discover and fix cybersecurity vulnerabilities.
+- **Before**: research intern, AI4Bharat, IIT Madras. Circuit tracing in reasoning models, across Indic languages and model scales.
 - **Interests**: AI research (interpretability, RL, model internals) and core systems — distributed systems, database internals, concurrency.
 - **School**: B.Tech in Information Technology, IIEST Shibpur. CGPA 9.15/10.
 
 Links: [résumé](https://aritro.is-a.dev/resume.pdf) · [blog](https://silicognition.is-a.dev/) · [github](https://github.com/sortira) · [linkedin](https://www.linkedin.com/in/aritroshome/) · [x](https://x.com/silicognition) · [youtube](https://www.youtube.com/@thearitroshomefromtech) · [email](mailto:aritro.shome.official@gmail.com)
 
 ## Experience
+
+### Research Intern, [SPARC Labs](https://www.sparc-labs.in/), IISc Bangalore (sep 2026 to present)
+
+Building harnesses that automatically discover and fix cybersecurity vulnerabilities. Just started; writeups to follow.
 
 ### Research Intern, [AI4Bharat](https://ai4bharat.iitm.ac.in/), IIT Madras (7 months, mar 2026 to sep 2026)
 
@@ -76,4 +80,4 @@ Built a modular Python engine that generates alpona (Bengali folk art) through f
 
 If you are building ML systems, research tooling, or infrastructure that has to hold up in production, I would like to hear from you: aritro.shome.official@gmail.com. I am in Calcutta and happy to meet for a walk.
 
-Last updated: 8 September 2026.
+Last updated: 1 October 2026.

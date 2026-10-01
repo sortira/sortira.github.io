@@ -1,12 +1,12 @@
 # Aritro Shome (sortira)
 
-> Personal site of Aritro Shome (a.k.a. sortira), a student engineer working across machine-learning research, ML engineering and systems. Research intern at AI4Bharat, IIT Madras, doing mechanistic interpretability and circuit tracing on multilingual vision-language models over Indic inputs; previously an AI engineer intern at Sarvam AI, building evaluation frameworks and production data pipelines. Also interested in core CS: distributed systems, database internals, concurrency and algorithms.
+> Personal site of Aritro Shome (a.k.a. sortira), a student engineer working across machine-learning research, ML engineering and systems. Research intern at SPARC Labs, IISc Bangalore, building harnesses that automatically discover and fix cybersecurity vulnerabilities. Previously a research intern at AI4Bharat, IIT Madras, doing mechanistic interpretability and circuit tracing on multilingual vision-language models over Indic inputs, and an AI engineer intern at Sarvam AI, building evaluation frameworks and production data pipelines. Also interested in core CS: distributed systems, database internals, concurrency and algorithms.
 
 Canonical host: https://aritro.is-a.dev/ (https://sortira.github.io/ redirects here). Clean markdown mirrors of each page are linked below.
 
 ## Main
 
-- [Home](https://aritro.is-a.dev/index.html.md): Positioning, current work at AI4Bharat, prior work at Sarvam AI, selected solo projects (ForgeFormer; Seven Deadly Sins of Gemma; AlponaGen) with tech stacks, education, awards, teaching.
+- [Home](https://aritro.is-a.dev/index.html.md): Positioning, current work at SPARC Labs, prior work at AI4Bharat and Sarvam AI, selected solo projects (ForgeFormer; Seven Deadly Sins of Gemma; AlponaGen) with tech stacks, education, awards, teaching.
 - [Everything else](https://aritro.is-a.dev/other.html.md): Tooling (ML, infra, languages, core CS), smaller builds, certifications, earlier academic results.
 - [Résumé (PDF)](https://aritro.is-a.dev/resume.pdf)
 
