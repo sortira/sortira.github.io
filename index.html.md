@@ -5,7 +5,7 @@ Hi, I am Aritro, a CS/IT undergrad at IIEST Shibpur, and go by *sortira* on most
 ## At a glance
 
 - **Now**: research intern, SPARC Labs, IISc Bangalore. Harnesses that discover and fix cybersecurity vulnerabilities.
-- **Before**: research intern, AI4Bharat, IIT Madras. Circuit tracing in reasoning models, across Indic languages and model scales.
+- **Before**: AI4Bharat, IIT Madras (interpretability research) and Sarvam AI (ML evaluation and production pipelines).
 - **Interests**: AI research (interpretability, RL, model internals) and core systems — distributed systems, database internals, concurrency.
 - **School**: B.Tech in Information Technology, IIEST Shibpur. CGPA 9.15/10.
 
@@ -19,7 +19,8 @@ Building harnesses that automatically discover and fix cybersecurity vulnerabili
 
 ### Research Intern, [AI4Bharat](https://ai4bharat.iitm.ac.in/), IIT Madras (7 months, mar 2026 to sep 2026)
 
-- Investigating mechanistic interpretability and circuit tracing of SoTA open models (Gemma, Qwen) on reasoning tasks posed across modalities, languages and model scales, with a focus on vision-language models over Indic inputs.
+- Worked on MahaVistaar, the Government of Maharashtra's AI app for farmers, improving ASR models on the Bhili dialect.
+- Investigated mechanistic interpretability and circuit tracing of SoTA open models (Gemma, Qwen) on reasoning tasks posed across modalities, languages and model scales, with a focus on vision-language models over Indic inputs.
 - Ran 40,000+ instrumented forward passes for activation capture on multi-billion-parameter models under a hard 24 GB VRAM ceiling, with component-attribution scripts to isolate critical circuits before committing to full runs.
 - Engineered a memory-efficient activation-patching framework: disabled fused and attention-kernel optimisations to expose per-layer activations, then managed the non-linear VRAM growth that followed.
 
@@ -27,6 +28,7 @@ Building harnesses that automatically discover and fix cybersecurity vulnerabili
 
 ### AI Engineer Intern, [Sarvam AI](https://www.sarvam.ai/), media & dubbing (4 months, aug 2025 to dec 2025)
 
+- Worked on the production dubbing pipeline behind the Mann Ki Baat podcast, dubbed across 20+ Indian languages for over 20 crore regular listeners.
 - Built an automated evaluation framework for an NVIDIA lip-sync model; the pipeline caught and resolved a bug causing ~500% variance in output video file sizes.
 - Redesigned the production dubbing pipeline, replacing brittle hard-coded prompt harnesses with modular YAML instruction blocks that let the model's chain-of-thought infer context. Translation quality went up, and I picked the final configuration by A/B test.
 - [Pipeline in production (video)](https://www.youtube.com/watch?v=KNEJcCtoE4M)
